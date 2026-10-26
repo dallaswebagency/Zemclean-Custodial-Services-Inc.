@@ -3,538 +3,884 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zemclean Custodial Services | Commercial Cleaning &amp; Janitorial, Edmonton</title>
-<meta name="description" content="Commercial cleaning and janitorial services in Edmonton, Sherwood Park, Spruce Grove, Leduc and Fort Saskatchewan. Electrostatic disinfection, trained and supervised staff, no long term contracts.">
+<title>Commercial Cleaning &amp; Janitorial Services Edmonton | Zemclean</title>
+<meta name="description" content="Professional commercial cleaning and janitorial services in Edmonton and surrounding areas. Discover customized cleaning solutions from Zemclean.">
+<meta name="theme-color" content="#062B50">
+<meta property="og:title" content="Commercial Cleaning &amp; Janitorial Services Edmonton | Zemclean">
+<meta property="og:description" content="Professional commercial cleaning and janitorial services in Edmonton and surrounding areas.">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/car-dealership.webp">
+<script>
+/* image fallback: new artwork file first, then the data-fb file, otherwise hide the image */
+function fb(i){var f=i.getAttribute('data-fb');i.onerror=null;if(f){i.src=f}else{i.style.display='none'}}
+</script>
 <style>
 :root{
-  --ink:#0E1B12; --forest:#285E1A; --leaf:#5FA02B; --lime:#A6D23C; --chart:#C9E26A;
-  --mist:#F1F7E2; --paper:#FBFCF6; --amber:#EDA02B; --gold:#F0B93A; --line:rgba(14,27,18,.14);
-  --head:'Barlow Condensed',Impact,sans-serif; --body:'Barlow',system-ui,sans-serif;
+  --navy:#062B50; --navy2:#0B3A68; --green:#75B900; --dgreen:#4D8500; --white:#fff;
+  --gray:#F5F7F8; --char:#253445; --soft:#F0F8E8; --line:rgba(6,43,80,.12);
+  --head:'Plus Jakarta Sans',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif;
+  --r:18px; --shadow:0 10px 30px rgba(6,43,80,.10); --shadow2:0 18px 44px rgba(6,43,80,.18);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:100px}
-body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
-html,body{overflow-x:clip}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{font-family:var(--body);color:var(--char);background:#fff;line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 ul{list-style:none}
+button{font:inherit;cursor:pointer}
+h1,h2,h3,h4{font-family:var(--head);color:var(--navy);line-height:1.12;letter-spacing:-.02em;font-weight:800}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
+h3{font-size:1.2rem;letter-spacing:-.01em}
 .wrap{width:min(1200px,92%);margin-inline:auto}
-h1,h2,h3{font-family:var(--head);text-transform:uppercase;line-height:.95;letter-spacing:.01em;font-weight:800}
-.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font:600 .82rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--forest)}
-.eyebrow::before{content:"";width:34px;height:3px;background:var(--amber)}
-.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.5rem;font:700 1rem/1 var(--body);letter-spacing:.02em;border:2px solid var(--ink);transition:.2s;cursor:pointer;background:none}
-.btn-solid{background:var(--ink);color:var(--paper)}
-.btn-solid:hover{background:var(--forest);border-color:var(--forest)}
-.btn-line:hover{background:var(--ink);color:var(--paper)}
-.btn-amber{background:var(--gold);border-color:var(--gold);color:var(--ink)}
-.btn-amber:hover{background:var(--paper);border-color:var(--paper)}
-.spark{width:22px;height:22px;fill:var(--amber);flex:none}
+.wrap>*,.about-g>*,.areas-g>*,.quote-g>*,.q-g>*,.why-g>*{min-width:0}
+.logo img{mix-blend-mode:multiply}
+.sec{padding:clamp(4rem,8vw,7rem) 0}
+.alt{background:var(--gray)}
+.ic{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;font:700 .78rem/1.4 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--dgreen);margin-bottom:1rem}
+.eyebrow::before{content:"";width:30px;height:3px;border-radius:2px;background:var(--green)}
+.lead{font-size:1.1rem;max-width:40rem;margin-top:1rem}
+.head-c{max-width:46rem;margin:0 auto 3rem;text-align:center}
+.head-c .lead{margin-inline:auto}
+.head-c .eyebrow{justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem 1.6rem;border-radius:999px;font:700 .98rem/1 var(--head);border:2px solid transparent;transition:.25s;cursor:pointer;white-space:nowrap}
+.btn .ic{transition:transform .25s}
+.btn:hover .ic{transform:translateX(4px)}
+.btn-g{background:var(--green);color:#052033;border-color:var(--green)}
+.btn-g:hover{background:var(--dgreen);border-color:var(--dgreen);color:#fff}
+.btn-w{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-w:hover{background:#fff;color:var(--navy)}
+.btn-n{background:var(--navy);color:#fff}
+.btn-n:hover{background:var(--navy2)}
+.link{display:inline-flex;align-items:center;gap:.5rem;font:700 .95rem var(--head);color:var(--navy)}
+.link:hover{color:var(--dgreen)}
+.link .ic{transition:transform .25s}
+.link:hover .ic{transform:translateX(4px)}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
 
-/* top bar + nav */
-.topbar{background:var(--ink);color:#d9e6cc;font-size:.88rem}
-.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;flex-wrap:wrap}
-.topbar b{color:var(--gold);font-weight:600}
-header.nav{position:sticky;top:0;z-index:50;background:rgba(251,252,246,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:92px;gap:1.5rem}
-.logo img{height:78px;width:auto}
-.menu{display:flex;gap:1.8rem;font-weight:600;font-size:.97rem}
-.menu a{position:relative;padding:.3rem 0}
-.menu a::after{content:"";position:absolute;left:0;bottom:-2px;height:3px;width:0;background:var(--lime);transition:.25s}
-.menu a:hover::after{width:100%}
-.nav .btn{padding:.75rem 1.2rem}
-.burger{display:none;background:none;border:2px solid var(--ink);padding:.5rem .7rem;font:700 .9rem var(--body);cursor:pointer}
+/* top bar and nav */
+.topbar{background:var(--navy);color:#cfe0f1;font-size:.86rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;align-items:center}
+.topbar a{color:#fff;font-weight:600;display:inline-flex;align-items:center;gap:.5rem}
+.topbar a:hover{color:var(--green)}
+header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+header.nav.stuck{box-shadow:0 8px 24px rgba(6,43,80,.10)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:78px}
+.logo img{height:54px;width:auto}
+.menu{display:flex;gap:1.6rem;align-items:center}
+.menu a{font:600 .92rem var(--head);color:var(--navy);position:relative;padding:.4rem 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:-2px;height:3px;width:0;background:var(--green);border-radius:2px;transition:width .25s}
+.menu a:hover::after,.menu a.on::after{width:100%}
+.nav-r{display:flex;align-items:center;gap:.7rem}
+.nav-call{display:none;width:46px;height:46px;border-radius:50%;background:var(--soft);color:var(--navy);align-items:center;justify-content:center}
+.burger{display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy);align-items:center;justify-content:center}
+.nav-cta{padding:.9rem 1.3rem;font-size:.86rem;letter-spacing:.04em}
 
 /* hero */
-.hero{position:relative;overflow:hidden;padding:4.5rem 0 6rem}
-.hero .zmark{position:absolute;right:-6%;top:-4%;width:min(720px,60vw);opacity:.16;z-index:0}
-.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
-.hero h1{font-size:clamp(3.6rem,8.6vw,7.6rem);margin:1.2rem 0 1.4rem}
-.hero h1 em{font-style:normal;color:var(--forest);position:relative;white-space:nowrap}
-.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.16em;background:var(--lime);z-index:-1}
-.hero p.lead{font-size:1.2rem;max-width:34rem;color:#2c3a30}
-.hero .cta{display:flex;flex-wrap:wrap;gap:.9rem;margin:2rem 0 1.4rem}
-.hero .fine{font-size:.92rem;color:#51604f;display:flex;gap:1.4rem;flex-wrap:wrap}
-.hero .fine span::before{content:"✓";color:var(--leaf);font-weight:800;margin-right:.4rem}
-.hero-art{position:relative;padding-bottom:2rem}
-.ph{position:relative;background:linear-gradient(140deg,var(--forest),var(--leaf) 55%,var(--chart));overflow:hidden}
-.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-photo{aspect-ratio:3/4;clip-path:polygon(16% 0,100% 0,100% 100%,0 100%)}
-.sheet{position:absolute;left:-2%;bottom:0;width:min(290px,72%);background:#fff;border:2px solid var(--ink);padding:1.2rem 1.2rem 1rem;box-shadow:8px 8px 0 var(--lime);transform:rotate(-2deg)}
-.sheet h3{font-size:1.25rem;margin-bottom:.7rem;display:flex;justify-content:space-between;align-items:center}
-.sheet li{display:flex;gap:.6rem;align-items:center;font-size:.95rem;padding:.38rem 0;border-bottom:1px dashed var(--line)}
-.sheet li i{width:18px;height:18px;border:2px solid var(--forest);display:grid;place-items:center;font-style:normal;font-size:.75rem;color:var(--forest);font-weight:800;flex:none}
-.sheet .sign{margin-top:.8rem;font:600 .8rem var(--body);letter-spacing:.1em;text-transform:uppercase;color:#51604f}
-.sheet .sign b{display:block;font:800 1.5rem var(--head);color:var(--ink);letter-spacing:0;text-transform:none;font-style:italic;border-bottom:2px solid var(--ink);margin-top:.15rem}
-.seal{position:absolute;right:1%;top:5%;width:138px;height:138px;border-radius:50%;background:var(--gold);display:grid;place-items:center;text-align:center;font:800 1.02rem/1.05 var(--head);text-transform:uppercase;padding:.6rem;transform:rotate(10deg);border:2px solid var(--ink);font-size:.95rem}
-.seal small{display:block;font:600 .62rem var(--body);letter-spacing:.1em;margin-top:.3rem}
-
-/* tape */
-.tape{background:var(--ink);color:var(--paper);transform:rotate(-1.6deg);margin:-2.2rem -3% 0;padding:1rem 0;overflow:hidden;position:relative;z-index:3;border-block:4px solid var(--lime)}
-.tape-track{display:flex;width:max-content;animation:slide 38s linear infinite}
-.tape span{font:700 1.5rem var(--head);text-transform:uppercase;letter-spacing:.06em;padding-right:1.6rem;display:flex;align-items:center;gap:1.6rem;white-space:nowrap}
-.tape span::after{content:"✦";color:var(--gold)}
-@keyframes slide{to{transform:translateX(-50%)}}
-
-/* disinfection */
-.disinfect{background:var(--forest);color:#eef6df;margin-top:-1.4rem;padding:9rem 0 6.5rem;clip-path:polygon(0 4.5rem,100% 0,100% 100%,0 calc(100% - 4rem));position:relative}
-.disinfect .eyebrow{color:var(--chart)}
-.d-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem;align-items:start}
-.disinfect h2{font-size:clamp(2.8rem,5.4vw,4.8rem);margin:1rem 0 1.4rem;color:#fff}
-.disinfect h2 u{text-decoration:none;color:var(--lime)}
-.disinfect p{color:#d6e6c2;max-width:34rem}
-.d-photo{aspect-ratio:16/9;margin-bottom:2rem;border:3px solid var(--lime)}
-.d-stat{position:absolute;left:0;bottom:0;background:var(--ink);padding:.9rem 1.3rem;font:800 3.4rem/1 var(--head);color:var(--lime)}
-.d-stat small{display:block;font:600 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#d6e6c2;margin-top:.3rem}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:0 2.2rem}
-.facts div{padding:1.1rem 0;border-top:1px solid rgba(255,255,255,.25)}
-.facts b{display:block;font:800 1.35rem var(--head);text-transform:uppercase;color:#fff;letter-spacing:.02em}
-.facts span{font-size:.97rem;color:#c8dcb0}
-.callbox{margin-top:2.4rem;display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
-.callbox p{max-width:none;font-weight:600;color:#fff}
-
-/* facilities bento */
-.facilities{padding:6rem 0 3rem}
-.sec-head{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end;margin-bottom:2.6rem}
-.sec-head h2{font-size:clamp(2.6rem,5vw,4.4rem);margin-top:.9rem;max-width:14ch}
-.sec-head p{max-width:27rem;color:#43524a}
-.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:1rem}
-.tile{position:relative;overflow:hidden;color:#fff;display:flex;align-items:flex-end;padding:1.3rem;isolation:isolate}
-.tile .ph{position:absolute;inset:0;z-index:-2}
-.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(14,27,18,.82),rgba(14,27,18,0) 62%);z-index:-1}
-.tile img{transition:transform .6s}
-.t1 img{object-position:35% center}
-.t4 img{object-position:68% center}
-.t5 img{object-position:50% 58%}
-.hero-photo img{object-position:42% center}
-.tile:hover img{transform:scale(1.05)}
-.tile h3{font-size:1.7rem;margin-bottom:.25rem}
-.tile p{font-size:.92rem;color:#e3eed3;max-width:24rem}
-.t1{grid-column:1/7;grid-row:1/5}
-.t2{grid-column:7/13;grid-row:1/3}
-.t3{grid-column:7/10;grid-row:3/5}
-.t4{grid-column:10/13;grid-row:3/5}
-.t5{grid-column:1/7;grid-row:5/7}
-.t6{grid-column:7/13;grid-row:5/7;background:var(--lime);color:var(--ink);align-items:center;justify-content:space-between;gap:1rem;padding:2rem}
-.t6::after{display:none}
-.t6 h3{font-size:2.6rem;margin:0}
-
-/* ledger */
-.ledger-sec{padding:3rem 0 6rem}
-.ledger-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem}
-.ledger-grid h2{font-size:clamp(2.4rem,4.6vw,4rem);margin-top:.9rem}
-.ledger-grid .note{margin-top:1.4rem;color:#43524a;max-width:24rem}
-.ledger li{display:grid;grid-template-columns:3.2rem 1fr auto;align-items:center;gap:1rem;padding:1.05rem .4rem;border-bottom:1px solid var(--line);transition:.25s}
-.ledger li:first-child{border-top:1px solid var(--line)}
-.ledger li:hover{background:var(--mist);padding-left:1.1rem}
-.ledger .n{font:700 1.1rem var(--head);color:var(--leaf)}
-.ledger .t{font:700 1.5rem var(--head);text-transform:uppercase;letter-spacing:.02em}
-.ledger .t small{display:block;font:400 .9rem var(--body);text-transform:none;letter-spacing:0;color:#51604f}
-.ledger .a{font-size:1.3rem;color:var(--forest)}
-
-/* why */
-.why{background:var(--mist);padding:6rem 0;position:relative}
-.why-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:4.5rem}
-.why-l{position:sticky;top:120px;align-self:start}
-.why-l h2{font-size:clamp(2.8rem,5vw,4.6rem);margin:.9rem 0 1.3rem}
-.why-l p{max-width:30rem;color:#33443a}
-.why-photo{aspect-ratio:3/4;margin-top:2rem;max-width:380px;clip-path:polygon(0 0,100% 0,100% 88%,84% 100%,0 100%)}
-.pride h3{font-size:1.1rem;font-family:var(--body);font-weight:700;letter-spacing:.14em;color:var(--forest);margin-bottom:.6rem}
-.pride li{display:flex;gap:1rem;align-items:center;padding:.95rem 0;border-bottom:1px solid var(--line);font:700 1.6rem/1.1 var(--head);text-transform:uppercase;letter-spacing:.015em}
-.pride li svg{width:26px;height:26px;flex:none}
-.pull{margin-top:2.2rem;background:var(--ink);color:#fff;padding:2rem 2.2rem;position:relative}
-.pull p{font:800 2.2rem/1.02 var(--head);text-transform:uppercase}
-.pull p b{color:var(--lime);font-weight:800}
-.pull .spark{position:absolute;right:1.4rem;top:1.2rem;width:34px;height:34px}
-
-/* quality band */
-.quality{background:var(--ink);color:#fff;padding:7rem 0;margin-top:-3rem;clip-path:polygon(0 3rem,100% 0,100% calc(100% - 3rem),0 100%);position:relative}
-.q-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
-.quality h2{font-size:clamp(3.4rem,8vw,7rem);color:var(--lime);line-height:.88}
-.quality h2 span{color:#fff}
-.q-list li{padding:1.2rem 0;border-top:1px solid rgba(255,255,255,.2);display:flex;gap:1rem;align-items:flex-start}
-.q-list li:last-child{border-bottom:1px solid rgba(255,255,255,.2)}
-.q-list svg{margin-top:.2rem}
-.q-list b{display:block;font:800 1.45rem var(--head);text-transform:uppercase;letter-spacing:.02em}
-.q-list span{color:#b9cdab;font-size:.97rem}
+.hero{position:relative;min-height:clamp(640px,90vh,860px);display:flex;align-items:center;color:#fff;background:var(--navy);overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;animation:zoom 14s ease-out both}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(95deg,rgba(6,43,80,.96) 0%,rgba(6,43,80,.88) 34%,rgba(6,43,80,.45) 66%,rgba(6,43,80,.12) 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;z-index:2;background:linear-gradient(90deg,var(--green),transparent 60%)}
+.hero .wrap{position:relative;z-index:3;padding:5rem 0}
+.hero-in{max-width:690px;animation:up .9s .1s both}
+.hero .eyebrow{color:var(--green)}
+.hero h1{color:#fff;font-size:clamp(2.7rem,6.2vw,5.1rem);letter-spacing:-.035em;line-height:1.02}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero p.sub{font-size:1.15rem;color:#dbe7f3;margin-top:1.5rem;max-width:34rem}
+.hero .btns{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem}
+.trust{display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1.6rem;margin-top:2.4rem;max-width:34rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.22)}
+.trust li{display:flex;gap:.6rem;align-items:center;font-size:.95rem;font-weight:500;color:#fff}
+.trust .ic{color:var(--green);width:1.2em;height:1.2em;stroke-width:2.4}
+@keyframes zoom{from{transform:scale(1.07)}to{transform:scale(1)}}
+@keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 
 /* credentials */
-.creds{padding:5.5rem 0 3rem}
-.creds .row{display:flex;align-items:center;justify-content:space-between;gap:2rem 3rem;flex-wrap:wrap;margin-top:2rem;padding:1.8rem 2rem;background:#fff;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--chart)}
-.creds img{height:62px;width:auto;object-fit:contain;filter:grayscale(.15)}
-.creds .sec-head{margin-bottom:0}
+.creds{padding:2.6rem 0;border-bottom:1px solid var(--line);background:#fff}
+.creds .wrap{display:flex;align-items:center;justify-content:space-between;gap:2rem 3rem;flex-wrap:wrap}
+.creds h2{font-size:1.2rem;max-width:15rem;line-height:1.25}
+.logos{display:flex;align-items:center;gap:1.8rem 2.6rem;flex-wrap:wrap;flex:1;justify-content:flex-end}
+.logos img{height:58px;width:auto;filter:grayscale(1);opacity:.7;transition:.3s;mix-blend-mode:multiply}
+.logos img:hover{filter:none;opacity:1}
+.mark{font:800 .86rem/1.15 var(--head);color:var(--navy);letter-spacing:.04em;text-transform:uppercase;border:2px solid #b8c4cf;border-radius:10px;padding:.7rem .95rem;text-align:center;opacity:.75;transition:.3s;filter:grayscale(1)}
+.mark:hover{border-color:var(--green);opacity:1;color:var(--dgreen)}
+
+/* about */
+.about-g{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2.5rem,6vw,5.5rem);align-items:center}
+.media{position:relative;padding-bottom:2.5rem}
+.m-main{border-radius:24px;overflow:hidden;aspect-ratio:4/4.3;box-shadow:var(--shadow2);background:var(--navy)}
+.m-main img,.m-sub img{width:100%;height:100%;object-fit:cover}
+.m-sub{position:absolute;right:-1.4rem;bottom:0;width:46%;aspect-ratio:1/1;border-radius:20px;overflow:hidden;border:6px solid #fff;box-shadow:var(--shadow2);background:var(--navy)}
+.m-tag{position:absolute;left:1.2rem;top:1.2rem;background:var(--navy);color:#fff;font:700 .78rem var(--head);padding:.55rem .9rem;border-radius:999px;letter-spacing:.06em;display:flex;gap:.5rem;align-items:center}
+.m-tag i{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.about-g h2{margin-bottom:1.2rem}
+.about-g p{margin-bottom:1rem}
+.points{margin:1.8rem 0 2rem;display:grid;gap:1.2rem}
+.pt{display:flex;gap:1rem;align-items:flex-start}
+.pt .bub{width:50px;height:50px;border-radius:14px;background:var(--soft);color:var(--dgreen);display:grid;place-items:center;flex:none}
+.pt h3{font-size:1.05rem;margin-bottom:.1rem}
+.pt p{margin:0;font-size:.97rem}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);transition:.35s;display:flex;flex-direction:column;border:1px solid var(--line)}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow2)}
+.card .ph{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--navy)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.card:hover .ph img{transform:scale(1.07)}
+.card .bd{padding:2rem 1.6rem 1.6rem;position:relative;flex:1;display:flex;flex-direction:column}
+.card .ico{position:absolute;top:-26px;left:1.6rem;width:52px;height:52px;border-radius:14px;background:var(--green);color:#052033;display:grid;place-items:center;box-shadow:0 8px 18px rgba(117,185,0,.4)}
+.card h3{margin-bottom:.5rem}
+.card p{font-size:.97rem;margin-bottom:1.1rem;flex:1}
+.after-cards{text-align:center;margin-top:2.8rem}
+
+/* industries */
+.ind{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.tile{position:relative;aspect-ratio:3/3.6;border-radius:var(--r);overflow:hidden;background:radial-gradient(circle at 85% 10%,rgba(117,185,0,.30),transparent 48%),repeating-linear-gradient(135deg,rgba(255,255,255,.045) 0 2px,transparent 2px 16px),linear-gradient(160deg,var(--navy2),var(--navy));color:#fff;display:flex;align-items:flex-end;isolation:isolate;transition:.35s}
+.tile:hover{transform:translateY(-6px);box-shadow:var(--shadow2)}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .7s}
+.tile:hover img{transform:scale(1.06)}
+.tile::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(6,43,80,.94) 8%,rgba(6,43,80,.35) 60%,rgba(6,43,80,.15))}
+.tile .big{position:absolute;top:1.3rem;left:1.3rem;width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);display:grid;place-items:center;color:var(--green);backdrop-filter:blur(4px)}
+.tile .big .ic{width:1.5em;height:1.5em}
+.tile .tx{padding:1.4rem}
+.tile h3{color:#fff;font-size:1.15rem;position:relative;padding-top:.9rem}
+.tile h3::before{content:"";position:absolute;top:0;left:0;width:34px;height:3px;background:var(--green);border-radius:2px;transition:width .35s}
+.tile:hover h3::before{width:64px}
+.note{font-size:.85rem;color:#5d6c7b;margin-top:1.4rem;text-align:center}
+
+/* why */
+.why{background:var(--navy);color:#cfe0f1;position:relative;overflow:hidden}
+.why::before{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(117,185,0,.20),transparent 68%)}
+.why h2{color:#fff}
+.why .eyebrow{color:var(--green)}
+.why .lead{color:#cfe0f1}
+.why-g{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4.5rem);align-items:start;margin-top:3rem;position:relative}
+.why-photo{border-radius:24px;overflow:hidden;aspect-ratio:3/4;position:sticky;top:110px;box-shadow:0 24px 60px rgba(0,0,0,.4);background:var(--navy2)}
+.why-photo img{width:100%;height:100%;object-fit:cover}
+.why-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(6,43,80,.5),transparent 45%)}
+.bens{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.ben{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:1.6rem;transition:.3s}
+.ben:hover{background:rgba(255,255,255,.09);border-color:var(--green);transform:translateY(-4px)}
+.ben .ic{width:2.1rem;height:2.1rem;color:var(--green);margin-bottom:1rem}
+.ben h3{color:#fff;font-size:1.08rem;margin-bottom:.5rem}
+.ben p{font-size:.95rem;color:#c3d5e8}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;position:relative}
+.steps::before{content:"";position:absolute;top:34px;left:12%;right:12%;height:2px;background:repeating-linear-gradient(90deg,var(--green) 0 10px,transparent 10px 20px)}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.8rem 1.5rem;position:relative;box-shadow:var(--shadow);transition:.3s}
+.step:hover{border-color:var(--green);transform:translateY(-6px)}
+.step .n{width:68px;height:68px;border-radius:50%;background:var(--navy);color:#fff;font:800 1.3rem var(--head);display:grid;place-items:center;margin:-3.2rem 0 1.2rem;border:5px solid #fff;box-shadow:0 0 0 2px var(--green)}
+.step .ic{color:var(--dgreen);width:1.7rem;height:1.7rem;margin-bottom:.8rem}
+.step h3{font-size:1.08rem;margin-bottom:.5rem}
+.step p{font-size:.95rem}
+.steps-wrap{padding-top:2rem}
+
+/* quality */
+.q{background:var(--soft)}
+.q-g{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.q-photo{border-radius:24px;overflow:hidden;aspect-ratio:4/4.7;box-shadow:var(--shadow2);background:var(--navy)}
+.q-photo img{width:100%;height:100%;object-fit:cover}
+.q-stack{display:grid;gap:1rem;margin:2rem 0}
+.q-card{display:flex;gap:1.1rem;background:#fff;border-radius:var(--r);padding:1.3rem 1.4rem;box-shadow:var(--shadow);border-left:5px solid var(--green);transition:.3s}
+.q-card:hover{transform:translateX(6px)}
+.q-card .ic{width:2rem;height:2rem;color:var(--dgreen);margin-top:.15rem}
+.q-card h3{font-size:1.08rem;margin-bottom:.2rem}
+.q-card p{font-size:.95rem}
+
+/* before after */
+.ba{max-width:980px;margin:0 auto}
+.ba-box{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;box-shadow:var(--shadow2);--pos:50%;user-select:none;background:var(--navy)}
+.ba-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-box .before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba-box .dirty{filter:grayscale(.75) sepia(.3) brightness(.6) contrast(.92)}
+.ba-grime{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--pos)) 0 0);background:radial-gradient(ellipse at 30% 80%,rgba(60,45,25,.45),transparent 55%),radial-gradient(ellipse at 75% 60%,rgba(60,45,25,.3),transparent 50%);pointer-events:none}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;background:#fff;transform:translateX(-50%);box-shadow:0 0 14px rgba(0,0,0,.4);pointer-events:none}
+.ba-knob{position:absolute;top:50%;left:var(--pos);width:54px;height:54px;border-radius:50%;background:var(--green);color:#052033;transform:translate(-50%,-50%);display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.35);border:3px solid #fff;pointer-events:none}
+.ba-knob .ic{width:1.6rem;height:1.6rem;stroke-width:2.4}
+.ba-box input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba-lab{position:absolute;top:1rem;font:700 .74rem var(--head);letter-spacing:.12em;text-transform:uppercase;padding:.45rem .8rem;border-radius:999px;background:rgba(6,43,80,.85);color:#fff;pointer-events:none}
+.ba-lab.l{left:1rem}.ba-lab.r{right:1rem;background:var(--green);color:#052033}
+.ba-cap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:1rem;font-size:.9rem}
+.ba-cap b{color:var(--navy)}
+.ba-cap span{color:#5d6c7b}
 
 /* areas */
-.areas{padding:3rem 0 6rem;overflow:hidden}
-.areas-line{font:800 clamp(2.6rem,7vw,6rem)/1.02 var(--head);text-transform:uppercase;color:transparent;-webkit-text-stroke:2px var(--forest);margin-top:1.2rem}
-.areas-line b{color:var(--forest);-webkit-text-stroke:0;font-weight:800}
-.areas-line i{font-style:normal;color:var(--amber);-webkit-text-stroke:0;font-size:.55em;padding:0 .3em;vertical-align:.2em}
+.areas-g{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.locs{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin:2rem 0}
+.loc{display:flex;align-items:center;gap:.8rem;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem;font:700 1rem var(--head);color:var(--navy);box-shadow:var(--shadow);transition:.3s}
+.loc:hover{border-color:var(--green);transform:translateY(-3px)}
+.loc .ic{color:var(--dgreen)}
+.map{background:#fff;border-radius:24px;padding:1rem;box-shadow:var(--shadow2);border:1px solid var(--line)}
+.map svg{width:100%;height:auto;border-radius:16px;display:block}
+.map small{display:block;text-align:center;color:#6b7a89;font-size:.8rem;margin-top:.6rem}
 
-/* contact */
-.contact{background:var(--lime);padding:6rem 0;position:relative;overflow:hidden}
-.contact .zmark{position:absolute;left:-8%;bottom:-30%;width:620px;opacity:.22}
-.c-grid{position:relative;display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:start}
-.contact h2{font-size:clamp(3rem,6vw,5.4rem);margin:.9rem 0 1.4rem}
-.contact .big-phone{display:inline-block;font:800 clamp(2.4rem,5vw,3.8rem) var(--head);border-bottom:5px solid var(--ink);line-height:1.05;margin:.4rem 0 1.4rem}
-.contact p{max-width:28rem}
-form{background:var(--paper);padding:2.2rem;border:2px solid var(--ink);box-shadow:10px 10px 0 var(--ink)}
-form h3{font-size:1.9rem;margin-bottom:1.2rem}
-.f2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-label{display:block;font:600 .8rem var(--body);letter-spacing:.1em;text-transform:uppercase;color:#42523f;margin-bottom:1rem}
-input,select,textarea{display:block;width:100%;margin-top:.35rem;padding:.8rem .9rem;border:2px solid var(--line);background:#fff;font:400 1rem var(--body);color:var(--ink);border-radius:0}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--forest)}
-textarea{min-height:110px;resize:vertical}
-form .btn{width:100%;justify-content:center}
-.ok{display:none;margin-top:1rem;font-weight:600;color:var(--forest)}
+/* testimonials */
+.tcards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.tc{background:#fff;border:2px dashed #b8c4cf;border-radius:var(--r);padding:2rem;position:relative}
+.tc .qm{font:800 4rem/1 var(--head);color:var(--green);opacity:.5;height:2.2rem}
+.tc p{color:#6b7a89;font-style:italic;margin:.8rem 0 1.4rem}
+.tc .who{display:flex;gap:.8rem;align-items:center}
+.tc .av{width:44px;height:44px;border-radius:50%;background:var(--gray);display:grid;place-items:center;color:#8896a4}
+.tc b{display:block;font:700 .95rem var(--head);color:var(--navy)}
+.tc span{font-size:.85rem;color:#6b7a89}
+.tc .flag{position:absolute;top:1rem;right:1rem;font:700 .68rem var(--head);letter-spacing:.1em;text-transform:uppercase;background:var(--soft);color:var(--dgreen);padding:.35rem .6rem;border-radius:999px}
+
+/* faq */
+.faq{max-width:860px;margin:0 auto;display:grid;gap:.9rem}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);transition:.3s}
+.faq details[open]{border-color:var(--green)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.2rem 1.4rem;cursor:pointer;font:700 1.05rem var(--head);color:var(--navy)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .ic{color:var(--dgreen);transition:transform .3s}
+.faq details[open] summary .ic{transform:rotate(180deg)}
+.faq .ans{padding:0 1.4rem 1.3rem;font-size:.98rem}
+
+/* final cta */
+.cta{position:relative;color:#fff;text-align:center;padding:clamp(5rem,10vw,8rem) 0;background:var(--navy);overflow:hidden;isolation:isolate}
+.cta>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,43,80,.9),rgba(6,43,80,.82))}
+.cta h2{color:#fff;font-size:clamp(2.3rem,5.4vw,4.2rem);letter-spacing:-.03em}
+.cta h2 em{font-style:normal;color:var(--green)}
+.cta p{max-width:38rem;margin:1.2rem auto 0;color:#dbe7f3;font-size:1.1rem}
+.cta .btns{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;margin-top:2.2rem}
+
+/* quote */
+.quote-g{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.qside p{margin-top:1rem}
+.cinfo{margin-top:2rem;display:grid;gap:1rem}
+.cinfo a{display:flex;gap:.9rem;align-items:center;font-weight:600;color:var(--navy)}
+.cinfo a:hover{color:var(--dgreen)}
+.cinfo .bub{width:48px;height:48px;border-radius:14px;background:var(--soft);color:var(--dgreen);display:grid;place-items:center}
+form.qf{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(1.5rem,3vw,2.4rem);box-shadow:var(--shadow2)}
+.qf h3{font-size:1.4rem;margin-bottom:1.3rem}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.qf label{display:block;font:600 .88rem var(--head);color:var(--navy);margin-bottom:.35rem}
+.qf label.consent{display:flex;font:400 .86rem var(--body);color:#51606f;margin:1.1rem 0 1.3rem}
+.qf .consent input{width:20px;height:20px;padding:0;margin-top:.15rem;flex:none}
+.qf label .req{color:#c0392b}
+.qf input,.qf select,.qf textarea{width:100%;font:400 .98rem var(--body);color:var(--char);padding:.85rem 1rem;border:1.5px solid #cdd6df;border-radius:12px;background:#fff;transition:.2s}
+.qf input:focus,.qf select:focus,.qf textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px rgba(117,185,0,.18)}
+.qf textarea{min-height:110px;resize:vertical}
+.full{grid-column:1/-1}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+.consent{display:flex;gap:.7rem;align-items:flex-start;font-size:.86rem;color:#51606f;margin:1.1rem 0 1.3rem}
+.consent input{width:20px;height:20px;margin-top:.15rem;accent-color:var(--dgreen);flex:none}
+.consent a,.priv-btn{color:var(--navy);text-decoration:underline;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.qf .btn{width:100%;padding:1.15rem}
+.msg{display:none;margin-top:1rem;padding:1rem 1.1rem;border-radius:12px;font-weight:600;font-size:.95rem}
+.msg.ok{background:var(--soft);color:var(--dgreen);display:block}
+.msg.err{background:#fdecea;color:#a93226;display:block}
+.fine{font-size:.78rem;color:#6b7a89;margin-top:.9rem;text-align:center}
 
 /* footer */
-footer{background:var(--ink);color:#c8d6bd;padding:4.5rem 0 0;position:relative}
-.f-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.1fr;gap:2.5rem;padding-bottom:3rem}
-.f-logo{display:inline-block;background:#fff;padding:.6rem .9rem;border-radius:4px}
-.f-logo img{height:96px;width:auto}
-footer p.tag{margin-top:1.1rem;max-width:20rem;font-size:.95rem}
-footer h4{font:700 1.15rem var(--head);text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:1rem}
-footer li{margin-bottom:.55rem;font-size:.95rem}
-footer a:hover{color:var(--lime)}
-.social{display:flex;gap:1rem;margin-top:.4rem}
-.social a{border:1px solid rgba(255,255,255,.3);padding:.5rem .9rem;font-size:.88rem}
-.f-bot{border-top:1px solid rgba(255,255,255,.14);padding:1.3rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.9rem}
-.f-bot a{color:var(--gold);font-weight:600;border-bottom:1px solid currentColor}
+footer{background:var(--navy);color:#b9cde1;padding:4.5rem 0 0;position:relative}
+.f-g{display:grid;grid-template-columns:1.4fr .8fr 1fr 1.2fr;gap:2.4rem;padding-bottom:3rem}
+.f-logo{display:inline-block;background:#fff;padding:.6rem .9rem;border-radius:12px}
+.f-logo img{height:50px;width:auto}
+footer p.tag{margin-top:1.2rem;font-size:.95rem;max-width:21rem}
+footer h4{color:#fff;font-size:1rem;margin-bottom:1.1rem;letter-spacing:0}
+footer li{margin-bottom:.6rem;font-size:.95rem}
+footer a:hover{color:var(--green)}
+.f-c li{display:flex;gap:.7rem;align-items:flex-start}
+.f-c .ic{color:var(--green);margin-top:.25rem}
+.soc{display:flex;gap:1rem;margin-top:1rem;font-weight:600;font-size:.9rem}
+.f-b{border-top:1px solid rgba(255,255,255,.14);padding:1.4rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.86rem}
+.f-b .priv-btn{color:#b9cde1}
+.top{position:fixed;right:1.2rem;bottom:1.2rem;width:50px;height:50px;border-radius:50%;background:var(--green);color:#052033;border:0;display:grid;place-items:center;box-shadow:var(--shadow2);opacity:0;pointer-events:none;transform:translateY(12px);transition:.3s;z-index:70}
+.top.show{opacity:1;pointer-events:auto;transform:none}
+dialog{border:0;border-radius:20px;padding:2rem;max-width:min(520px,92vw);box-shadow:var(--shadow2)}
+dialog::backdrop{background:rgba(6,43,80,.6)}
+dialog h3{margin-bottom:.8rem}
+dialog p{font-size:.95rem;margin-bottom:1.2rem}
 
 /* reveal */
-.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease;transition-delay:var(--d,0s)}
 .js .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.tape-track{animation:none}.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 
-/* responsive */
-@media (max-width:980px){
-  .menu,.nav .btn{display:none}
-  .burger{display:block}
-  .menu.open{display:flex;position:absolute;top:92px;left:0;right:0;flex-direction:column;background:var(--paper);padding:1.2rem 4%;border-bottom:2px solid var(--ink);gap:1rem}
-  .hero-grid,.d-grid,.ledger-grid,.why-grid,.q-grid,.c-grid{grid-template-columns:1fr;gap:2.6rem}
-  .why-l{position:static}
-  .hero-art{max-width:520px}
-  .sec-head{grid-template-columns:1fr}
-  .bento{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
-  .t1,.t2,.t3,.t4,.t5,.t6{grid-column:auto;grid-row:auto}
-  .t1{grid-column:span 2;grid-row:span 2}
-  .t6{grid-column:span 2}
-  .f-top{grid-template-columns:1fr 1fr}
+@media (max-width:1120px){
+  .menu{position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;gap:0;padding:.5rem 4% 1.2rem;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(6,43,80,.12);display:none}
+  .menu.open{display:flex}
+  .menu a{padding:.9rem 0;width:100%;border-bottom:1px solid var(--line)}
+  .menu a::after{display:none}
+  .burger,.nav-call{display:inline-flex}
+  .nav-cta{display:none}
 }
-@media (max-width:560px){
+@media (max-width:980px){
+  .about-g,.q-g,.areas-g,.quote-g,.why-g{grid-template-columns:1fr}
+  .why-photo{position:relative;top:0;aspect-ratio:4/3}
+  .cards{grid-template-columns:1fr 1fr}
+  .ind{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;gap:3.2rem 1.4rem}
+  .steps::before{display:none}
+  .tcards{grid-template-columns:1fr}
+  .f-g{grid-template-columns:1fr 1fr}
+  .m-sub{right:.5rem}
+  .logos{justify-content:flex-start;flex:1 1 100%}
+}
+@media (max-width:620px){
   body{font-size:16px}
-  .topbar .wrap span:last-child{display:none}
-  .hero{padding-top:3rem}
-  .facts,.f2{grid-template-columns:1fr}
-  .bento{grid-template-columns:1fr}
-  .t6 h3{font-size:1.8rem}
-  .t1,.t6{grid-column:auto}
-  .pride li{font-size:1.3rem}
-  .ledger li{grid-template-columns:2.4rem 1fr}
-  .ledger .a{display:none}
-  .f-top{grid-template-columns:1fr}
-  .seal{width:112px;height:112px;font-size:.78rem;right:2%}
-  .sheet{position:relative;left:auto;bottom:auto;margin:-3.2rem 0 0 -.4rem;width:82%}
-  .hero-art{padding-bottom:1rem}
-  .creds img{height:48px}
-  .logo img{height:64px}
-  form{padding:1.4rem}
+  .topbar .l{display:none}
+  .topbar .wrap{justify-content:center}
+  .cards,.ind,.steps,.bens,.locs,.fg,.f-g{grid-template-columns:1fr}
+  .trust{grid-template-columns:1fr}
+  .hero .btns .btn{width:100%}
+  .tile{aspect-ratio:16/10}
+  .ba-box{aspect-ratio:4/3}
+  .logo img{height:46px}
+  .nav .wrap{height:70px}
+  .menu{top:70px}
+  .cta .btns .btn{width:100%}
+  .btn{white-space:normal;text-align:center;padding:1rem 1.2rem}
+  .logos img{height:46px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-img,.hero-in{animation:none}
+  .js .rv{opacity:1;transform:none;transition:none}
+  *{transition-duration:.01ms!important}
 }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Zemclean Custodial Services Inc.","url":"https://www.zemclean.com/","telephone":"+1-780-289-4650","email":"raman.mann@zemclean.com","description":"Professional commercial cleaning and janitorial services for businesses across Edmonton and surrounding Alberta communities.","areaServed":["Edmonton","Sherwood Park","Spruce Grove","Leduc","Fort Saskatchewan"],"address":{"@type":"PostalAddress","addressLocality":"Edmonton","addressRegion":"AB","addressCountry":"CA"},"makesOffer":["Commercial Janitorial Services","Office Cleaning","Commercial Disinfection","Facility Cleaning and Maintenance","Floor Care and Cleaning","Customized Cleaning Programs"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What types of commercial properties do you clean?","acceptedAnswer":{"@type":"Answer","text":"We clean offices, commercial buildings, retail spaces, medical and healthcare facilities, industrial sites and managed properties across Edmonton and nearby communities."}},
+{"@type":"Question","name":"Do you offer customized janitorial cleaning schedules?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every facility is different, so we build the cleaning schedule and scope around your building, your operations and your budget."}},
+{"@type":"Question","name":"Can cleaning services be scheduled outside regular business hours?","acceptedAnswer":{"@type":"Answer","text":"Yes. Night-time cleaning is available so your team arrives to a clean workplace without disruption to the working day."}},
+{"@type":"Question","name":"How do you maintain consistent cleaning quality?","acceptedAnswer":{"@type":"Answer","text":"Through trained staff, supervision and regular quality checks, with adjustments made as your facility's needs change."}},
+{"@type":"Question","name":"Are your cleaning staff professionally trained?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our team is trained in cleaning procedures, equipment handling, safe use of cleaning products and workplace safety."}},
+{"@type":"Question","name":"Which areas around Edmonton do you serve?","acceptedAnswer":{"@type":"Answer","text":"We serve Edmonton, Sherwood Park, Spruce Grove, Leduc and Fort Saskatchewan."}},
+{"@type":"Question","name":"How can I request a commercial cleaning quote?","acceptedAnswer":{"@type":"Answer","text":"Use the quote form on this page or call 780-289-4650. Tell us about your facility and we will come back with a customized cleaning proposal."}}
+]}
+</script>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="spark" viewBox="0 0 24 24"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></symbol>
-    <symbol id="tick" viewBox="0 0 26 26"><rect x="1" y="1" width="24" height="24" fill="none" stroke="#5FA02B" stroke-width="2"/><path d="M6 13.5l5 5L20 8" fill="none" stroke="#285E1A" stroke-width="3"/></symbol>
-    <symbol id="zmark" viewBox="0 0 400 360">
-      <defs>
-        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A6D23C"/><stop offset="1" stop-color="#3F8021"/></linearGradient>
-        <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C9E26A"/><stop offset="1" stop-color="#9ACB36"/></linearGradient>
-      </defs>
-      <path d="M70 30H380V112H190C130 112 90 82 70 30Z" fill="url(#g1)"/>
-      <path d="M380 112V162L70 262V214Z" fill="url(#g2)"/>
-      <path d="M70 262H250C320 262 362 296 380 346H70Z" fill="url(#g1)"/>
-      <path d="M250 262C320 262 362 296 380 346H320C306 304 284 278 250 262Z" fill="#C5DE62"/>
-    </symbol>
-  </defs>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 5-5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2c2.9 0 5 2.3 5 5.3"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+  <symbol id="i-floor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 12h18M12 4v16"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h3"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c3 2.5 9 2.5 12 0v-4.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol>
+  <symbol id="i-factory" viewBox="0 0 24 24"><path d="M3 21V10l6 3v-3l6 3V6h6v15z"/><path d="M7 17h2M12 17h2M17 17h2"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></symbol>
+  <symbol id="i-desk" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="11" rx="1"/><path d="M8 20h8M12 16v4"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-lr" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></symbol>
 </svg>
 
-<div class="topbar"><div class="wrap">
-  <span>Janitorial services for your business in <b>Edmonton, Sherwood Park, Spruce Grove, Leduc &amp; Fort Saskatchewan</b></span>
-  <span>Call <b>780.289.4650</b></span>
-</div></div>
-
-<header class="nav"><div class="wrap">
-  <a class="logo" href="#home" aria-label="Zemclean Custodial Services home">
-    <img src="images/logo.png" alt="Zemclean Custodial Services Inc. Commercial Cleaning Experts">
-  </a>
-  <nav><ul class="menu" id="menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#quality">Quality Control</a></li>
-    <li><a href="#credentials">Credentials &amp; Rewards</a></li>
-    <li><a href="#company">Our Company</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-  </ul></nav>
-  <a class="btn btn-solid" href="tel:7802894650">780.289.4650</a>
-  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
-</div></header>
-
-<main>
-<!-- HERO -->
-<section class="hero" id="home">
-  <svg class="zmark" aria-hidden="true"><use href="#zmark"/></svg>
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">Commercial cleaning experts</span>
-      <h1>You tell us when it's <em>clean.</em></h1>
-      <p class="lead">Zemclean Custodial Services is the crew that makes cleaning the last thing on your mind. Trained, supervised and ready at a moment's notice, so your space is spotless, safe and disinfected.</p>
-      <div class="cta">
-        <a class="btn btn-solid" href="#contact">Book a free walkthrough</a>
-        <a class="btn btn-line" href="tel:7802894650">Call 780.289.4650</a>
-      </div>
-      <div class="fine"><span>No long term contracts</span><span>Fully insured &amp; bonded</span><span>Night time cleaning</span></div>
-    </div>
-    <div class="hero-art">
-      <div class="ph hero-photo"><img src="images/hero-cleaner-lobby.jpg" alt="Zemclean cleaner polishing a bright commercial lobby" onerror="this.style.display='none'"></div>
-      <div class="seal"><div>Electrostatic<br>disinfection<small>Hospital grade method</small></div></div>
-      <div class="sheet" aria-label="Sample cleaning sign-off sheet">
-        <h3>Tonight's sheet <svg class="spark"><use href="#spark"/></svg></h3>
-        <ul>
-          <li><i>✓</i>Lobby &amp; washrooms</li>
-          <li><i>✓</i>High dusting</li>
-          <li><i>✓</i>Floors scrubbed</li>
-          <li><i>✓</i>Surfaces disinfected</li>
-        </ul>
-        <div class="sign">Signed off by<b>You</b></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="tape" aria-hidden="true"><div class="tape-track">
-  <span>Medical clinics</span><span>Dental clinics</span><span>Car dealerships</span><span>Apartments</span><span>Condos</span><span>Strip malls</span><span>Warehouses</span><span>Service bays</span><span>Drive-thru cleaning</span>
-  <span>Medical clinics</span><span>Dental clinics</span><span>Car dealerships</span><span>Apartments</span><span>Condos</span><span>Strip malls</span><span>Warehouses</span><span>Service bays</span><span>Drive-thru cleaning</span>
-</div></div>
-
-<!-- DISINFECTION -->
-<section class="disinfect" id="disinfection">
-  <div class="wrap d-grid">
-    <div class="rv">
-      <span class="eyebrow">Disinfection services</span>
-      <h2>Leading edge disinfection, <u>done electrostatically.</u></h2>
-      <p>We are proud to offer state of the art disinfection using the same electrostatic equipment used by hospitals, airlines and other high use, critical facilities.</p>
-      <p style="margin-top:1rem">Our staff are trained to handle your normal cleaning duties and follow through with complete disinfection, using the latest protocols to help protect your facility and your people.</p>
-      <div class="callbox">
-        <p>Zemclean for all your disinfection needs. We are only a phone call away.</p>
-        <a class="btn btn-amber" href="tel:7802894650">780.289.4650</a>
-      </div>
-    </div>
-    <div class="rv">
-      <div class="ph d-photo"><img src="images/electrostatic-disinfection.jpg" alt="Technician using an electrostatic sprayer in a clinic waiting room" onerror="this.style.display='none'"><div class="d-stat">&lt; 1 min<small>Germ and bacteria kill time</small></div></div>
-      <div class="facts">
-        <div><b>Safe and effective</b><span>A proven method for hard use spaces.</span></div>
-        <div><b>Reaches the hard spots</b><span>Charged particles wrap around furniture, corners, high reach areas, door knobs and light switches.</span></div>
-        <div><b>Stay open</b><span>Staff and customers can remain in the facility during disinfection.</span></div>
-        <div><b>Organic and non-toxic</b><span>Safe for people, plants and animals.</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FACILITIES -->
-<section class="facilities" id="services">
+<div class="topbar">
   <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">Who we clean for</span><h2>Facilities that can't afford a bad day.</h2></div>
-      <p>From waiting rooms to warehouse floors, we adapt our crew, our equipment and our schedule to the way your building actually works.</p>
+    <span class="l">Professional Commercial Cleaning Across Edmonton &amp; Surrounding Areas</span>
+    <a href="tel:7802894650"><svg class="ic"><use href="#i-phone"/></svg>Call: 780-289-4650</a>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="Zemclean Custodial Services Inc. home">
+      <img src="images/logo.png" width="184" height="54" alt="Zemclean Custodial Services Inc. logo">
+    </a>
+    <nav class="menu" id="menu" aria-label="Main navigation">
+      <a href="#home" class="on">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#industries">Industries We Serve</a>
+      <a href="#quality">Quality &amp; Safety</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-r">
+      <a class="nav-call" href="tel:7802894650" aria-label="Call Zemclean"><svg class="ic"><use href="#i-phone"/></svg></a>
+      <a class="btn btn-g nav-cta" href="#contact">GET A FREE QUOTE</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg class="ic"><use href="#i-menu"/></svg></button>
     </div>
-    <div class="bento rv">
-      <a class="tile t1" href="#contact"><div class="ph"><img src="images/medical-dental-clinic.jpg" alt="Clean modern medical clinic reception" onerror="this.style.display='none'"></div><div><h3>Medical &amp; dental clinics</h3><p>Cleaning that follows through with complete disinfection, by staff trained on the latest protocols.</p></div></a>
-      <a class="tile t2" href="#contact"><div class="ph"><img src="images/car-dealership.jpg" alt="Car dealership showroom and service bay" onerror="this.style.display='none'"></div><div><h3>Car dealerships &amp; service bays</h3><p>Showrooms, service bays and drive-thru cleaning.</p></div></a>
-      <a class="tile t3" href="#contact"><div class="ph"><img src="images/apartments-condos.jpg" alt="Bright apartment building hallway" onerror="this.style.display='none'"></div><div><h3>Apartments &amp; condos</h3></div></a>
-      <a class="tile t4" href="#contact"><div class="ph"><img src="images/warehouse-degreasing.jpg" alt="Warehouse floor being machine scrubbed" onerror="this.style.display='none'"></div><div><h3>Warehouses &amp; mechanic bays</h3></div></a>
-      <a class="tile t5" href="#contact"><div class="ph"><img src="images/hero-cleaner-lobby.jpg" alt="Cleaner polishing the floor of a bright commercial lobby" onerror="this.style.display='none'"></div><div><h3>Offices, lobbies &amp; strip malls</h3><p>Polished floors and spotless common areas, night after night.</p></div></a>
-      <a class="tile t6" href="#contact"><h3>Not on the list? Ask us.</h3><svg class="spark" style="width:34px;height:34px;fill:var(--ink)"><use href="#spark"/></svg></a>
+  </div>
+</header>
+
+<main id="home">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="h1">
+  <img class="hero-img" src="images/hero-office.jpg" data-fb="images/car-dealership.webp" onerror="fb(this)" alt="Polished commercial interior with glass partitions and natural light" fetchpriority="high">
+  <div class="wrap">
+    <div class="hero-in">
+      <span class="eyebrow">Edmonton's commercial cleaning professionals</span>
+      <h1 id="h1">A Cleaner Workplace.<br>A <em>Better Business.</em></h1>
+      <p class="sub">Professional commercial cleaning and janitorial services tailored to your facility. From offices to commercial properties, Zemclean helps businesses maintain cleaner, healthier, and more welcoming environments.</p>
+      <div class="btns">
+        <a class="btn btn-g" href="#contact">Get a Free Cleaning Quote <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-w" href="#services">Explore Our Services</a>
+      </div>
+      <ul class="trust">
+        <li><svg class="ic"><use href="#i-check"/></svg>Professionally Trained Staff</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Customized Cleaning Programs</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Quality-Controlled Services</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Flexible Service Agreements</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- LEDGER -->
-<section class="ledger-sec">
-  <div class="wrap ledger-grid">
-    <div class="rv">
-      <span class="eyebrow">Our services</span>
-      <h2>Everything on the cleaning sheet.</h2>
-      <p class="note">Daily, weekly, bi-weekly or monthly. Tell us the rhythm that suits your business and we will build the schedule around it.</p>
-      <a class="btn btn-solid" style="margin-top:1.6rem" href="#contact">Request a quote</a>
+<!-- CREDENTIALS -->
+<section class="creds" aria-labelledby="cred-h">
+  <div class="wrap">
+    <h2 id="cred-h">Trusted Cleaning Standards. Professional Service.</h2>
+    <div class="logos">
+      <img src="images/badge-issa.jpg" alt="ISSA member" loading="lazy" height="58">
+      <img src="images/badge-bbb.png" alt="Better Business Bureau" loading="lazy" height="58">
+      <img src="images/badge-bscai.jpg" alt="Building Service Contractors Association International" loading="lazy" height="58">
+      <!-- CLIENT: swap these two text marks for the official WCB Alberta and Canadian Business Review Board logos -->
+      <span class="mark">WCB<br>Alberta</span>
+      <span class="mark">Canadian Business<br>Review Board</span>
     </div>
-    <ul class="ledger rv">
-      <li><span class="n">01</span><span class="t">Contract janitorial &amp; custodial<small>Daily, weekly, bi-weekly or monthly</small></span><span class="a">→</span></li>
-      <li><span class="n">02</span><span class="t">Night time cleaning<small>Done after hours, ready for opening</small></span><span class="a">→</span></li>
-      <li><span class="n">03</span><span class="t">Electrostatic disinfection<small>Fast kill time, safe organic chemicals</small></span><span class="a">→</span></li>
-      <li><span class="n">04</span><span class="t">Mechanical floor scrubbing<small>Plus stripping, sealing and waxing</small></span><span class="a">→</span></li>
-      <li><span class="n">05</span><span class="t">Carpet steam cleaning<small>Shampooing and deodorizing</small></span><span class="a">→</span></li>
-      <li><span class="n">06</span><span class="t">Window cleaning &amp; high dusting<small>The spots that usually get missed</small></span><span class="a">→</span></li>
-      <li><span class="n">07</span><span class="t">Warehouse &amp; mechanic bay degreasing<small>Service bays and drive-thru cleaning</small></span><span class="a">→</span></li>
-      <li><span class="n">08</span><span class="t">Janitorial supplies<small>Dispensers and supply order management</small></span><span class="a">→</span></li>
-    </ul>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about" aria-labelledby="about-h">
+  <div class="wrap about-g">
+    <div class="media rv">
+      <div class="m-main"><img src="images/about-team.jpg" data-fb="images/medical-dental-clinic.webp" onerror="fb(this)" alt="Modern commercial interior maintained by Zemclean" loading="lazy"></div>
+      <span class="m-tag"><i></i>Edmonton, Alberta</span>
+      <div class="m-sub"><img src="images/about-inspect.jpg" data-fb="images/supervisor-inspection.webp" onerror="fb(this)" alt="Team member inspecting completed cleaning work" loading="lazy"></div>
+    </div>
+    <div class="rv" style="--d:.12s">
+      <span class="eyebrow">About Zemclean</span>
+      <h2 id="about-h">More Than Cleaning. A Commitment to Your Workplace.</h2>
+      <p class="lead" style="margin-top:0">At Zemclean Custodial Services Inc., we understand that a clean workplace supports your business, employees, and visitors.</p>
+      <p style="margin-top:1rem">Our goal is simple: provide reliable, professional cleaning services so you can focus on running your business. Through trained staff, effective cleaning procedures, quality supervision, and customized service plans, we help commercial facilities maintain high standards of cleanliness.</p>
+      <div class="points">
+        <div class="pt"><span class="bub"><svg class="ic"><use href="#i-users"/></svg></span><div><h3>Our People</h3><p>Professionally trained cleaning staff.</p></div></div>
+        <div class="pt"><span class="bub"><svg class="ic"><use href="#i-shield"/></svg></span><div><h3>Our Standards</h3><p>Consistent quality control and supervision.</p></div></div>
+        <div class="pt"><span class="bub"><svg class="ic"><use href="#i-cal"/></svg></span><div><h3>Our Commitment</h3><p>Flexible cleaning solutions designed around your facility.</p></div></div>
+      </div>
+      <a class="link" href="#quality">Learn More About Zemclean <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec alt" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="head-c rv">
+      <span class="eyebrow">Our Commercial Cleaning Services</span>
+      <h2 id="svc-h">Professional Cleaning Solutions for Every Business.</h2>
+      <p class="lead">Every facility has different cleaning requirements. We provide customized janitorial and commercial cleaning solutions designed around your business operations.</p>
+    </div>
+    <!-- CLIENT REVIEW: confirm this service list against the live site before publishing -->
+    <div class="cards">
+      <article class="card rv">
+        <div class="ph"><img src="images/svc-janitorial.jpg" data-fb="images/hero-cleaner-lobby.webp" onerror="fb(this)" alt="Cleaner polishing the floor of a commercial lobby" loading="lazy"></div>
+        <div class="bd"><span class="ico"><svg class="ic"><use href="#i-building"/></svg></span>
+          <h3>Commercial Janitorial Services</h3>
+          <p>Reliable ongoing cleaning services that help commercial facilities maintain a professional appearance.</p>
+          <a class="link" href="#contact">Learn More <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card rv" style="--d:.08s">
+        <div class="ph"><img src="images/svc-office.jpg" data-fb="images/medical-dental-clinic.webp" onerror="fb(this)" alt="Clean modern office reception area" loading="lazy"></div>
+        <div class="bd"><span class="ico"><svg class="ic"><use href="#i-desk"/></svg></span>
+          <h3>Office Cleaning</h3>
+          <p>Professional cleaning solutions for offices, workspaces, meeting rooms, and shared areas.</p>
+          <a class="link" href="#contact">Learn More <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card rv" style="--d:.16s">
+        <div class="ph"><img src="images/electrostatic-disinfection.webp" alt="Technician carrying out electrostatic disinfection in a waiting room" loading="lazy"></div>
+        <div class="bd"><span class="ico"><svg class="ic"><use href="#i-spark"/></svg></span>
+          <h3>Commercial Disinfection</h3>
+          <p>Specialized disinfection services using appropriate equipment and cleaning procedures.</p>
+          <a class="link" href="#contact">Learn More <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="images/svc-facility.jpg" data-fb="images/car-dealership.webp" onerror="fb(this)" alt="Large commercial facility with polished floors" loading="lazy"></div>
+        <div class="bd"><span class="ico"><svg class="ic"><use href="#i-tool"/></svg></span>
+          <h3>Facility Cleaning &amp; Maintenance</h3>
+          <p>Customized cleaning programs for commercial buildings and managed facilities.</p>
+          <a class="link" href="#contact">Learn More <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card rv" style="--d:.08s">
+        <div class="ph"><img src="images/warehouse-degreasing.webp" alt="Floor scrubber cleaning a large commercial floor" loading="lazy"></div>
+        <div class="bd"><span class="ico"><svg class="ic"><use href="#i-floor"/></svg></span>
+          <h3>Floor Care &amp; Cleaning</h3>
+          <p>Professional floor cleaning and maintenance solutions for commercial environments.</p>
+          <a class="link" href="#contact">Learn More <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card rv" style="--d:.16s">
+        <div class="ph"><img src="images/svc-custom.jpg" data-fb="images/apartments-condos.webp" onerror="fb(this)" alt="Bright, clean commercial corridor" loading="lazy"></div>
+        <div class="bd"><span class="ico"><svg class="ic"><use href="#i-clip"/></svg></span>
+          <h3>Customized Cleaning Programs</h3>
+          <p>Flexible cleaning schedules and service plans tailored to your facility.</p>
+          <a class="link" href="#contact">Learn More <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </article>
+    </div>
+    <div class="after-cards"><a class="btn btn-n" href="#contact">View All Cleaning Services <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="sec" id="industries" aria-labelledby="ind-h">
+  <div class="wrap">
+    <div class="head-c rv">
+      <span class="eyebrow">Industries We Serve</span>
+      <h2 id="ind-h">Cleaning Solutions Built Around Your Industry.</h2>
+      <p class="lead">Different businesses require different cleaning standards. We tailor our cleaning programs to the needs of each facility.</p>
+    </div>
+    <!-- CLIENT REVIEW: confirm which sectors Zemclean currently serves -->
+    <div class="ind">
+      <a class="tile rv" href="#contact"><img src="images/industry-corporate.jpg" onerror="fb(this)" alt="" loading="lazy"><span class="big"><svg class="ic"><use href="#i-building"/></svg></span><div class="tx"><h3>Corporate Offices</h3></div></a>
+      <a class="tile rv" style="--d:.06s" href="#contact"><img src="images/industry-commercial.jpg" onerror="fb(this)" alt="" loading="lazy"><span class="big"><svg class="ic"><use href="#i-factory"/></svg></span><div class="tx"><h3>Commercial Buildings</h3></div></a>
+      <a class="tile rv" style="--d:.12s" href="#contact"><img src="images/industry-retail.jpg" onerror="fb(this)" alt="" loading="lazy"><span class="big"><svg class="ic"><use href="#i-bag"/></svg></span><div class="tx"><h3>Retail Stores</h3></div></a>
+      <a class="tile rv" style="--d:.18s" href="#contact"><img src="images/industry-medical.jpg" onerror="fb(this)" alt="" loading="lazy"><span class="big"><svg class="ic"><use href="#i-plus"/></svg></span><div class="tx"><h3>Medical &amp; Healthcare Facilities</h3></div></a>
+      <a class="tile rv" href="#contact"><img src="images/industry-industrial.jpg" onerror="fb(this)" alt="" loading="lazy"><span class="big"><svg class="ic"><use href="#i-tool"/></svg></span><div class="tx"><h3>Industrial Facilities</h3></div></a>
+      <a class="tile rv" style="--d:.06s" href="#contact"><img src="images/industry-property.jpg" onerror="fb(this)" alt="" loading="lazy"><span class="big"><svg class="ic"><use href="#i-key"/></svg></span><div class="tx"><h3>Property Management</h3></div></a>
+      <a class="tile rv" style="--d:.12s" href="#contact"><img src="images/industry-education.jpg" onerror="fb(this)" alt="" loading="lazy"><span class="big"><svg class="ic"><use href="#i-cap"/></svg></span><div class="tx"><h3>Educational Facilities</h3></div></a>
+      <a class="tile rv" style="--d:.18s" href="#contact"><img src="images/industry-workspace.jpg" onerror="fb(this)" alt="" loading="lazy"><span class="big"><svg class="ic"><use href="#i-desk"/></svg></span><div class="tx"><h3>Professional Workspaces</h3></div></a>
+    </div>
   </div>
 </section>
 
 <!-- WHY -->
-<section class="why" id="company">
-  <div class="wrap why-grid">
-    <div class="why-l rv">
-      <span class="eyebrow">Our company</span>
-      <h2>Why hire Zemclean?</h2>
-      <p>At Zemclean Custodial, our goal is to make the cleaning of your facility the last thing on your mind. Our staff are hired not only to clean, but to perform at a level that delivers a pristine space that is safe and disinfected.</p>
-      <div class="ph why-photo"><img src="images/supervisor-inspection.jpg" alt="Zemclean supervisor carrying out a random quality check" onerror="this.style.display='none'"></div>
+<section class="sec why" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="rv" style="max-width:46rem">
+      <span class="eyebrow">Why Choose Zemclean?</span>
+      <h2 id="why-h">Because Your Business Deserves Cleaning You Can Count On.</h2>
+      <p class="lead">Professional cleaning is about more than appearance. It's about reliability, consistency, safety, and maintaining an environment that reflects your business standards.</p>
     </div>
-    <div class="pride rv">
-      <h3>WHAT WE TAKE PRIDE IN</h3>
-      <ul>
-        <li><svg><use href="#tick"/></svg>Listening to and adapting for our clients</li>
-        <li><svg><use href="#tick"/></svg>Planning for constant changes in the industry</li>
-        <li><svg><use href="#tick"/></svg>Keeping up to date with certifications</li>
-        <li><svg><use href="#tick"/></svg>Learning new cleaning techniques</li>
-        <li><svg><use href="#tick"/></svg>Regular staff training: WHMIS, environmental challenges, product usage</li>
-        <li><svg><use href="#tick"/></svg>Ready to perform at a moment's notice</li>
-        <li><svg><use href="#tick"/></svg>Random supervision checks</li>
-        <li><svg><use href="#tick"/></svg>Mental health support for staff</li>
-        <li><svg><use href="#tick"/></svg>Low staff turnover</li>
-      </ul>
-      <div class="pull"><svg class="spark"><use href="#spark"/></svg><p>No long term contracts. <b>That's why we perform our best, every single night.</b></p></div>
+    <div class="why-g">
+      <div class="why-photo rv"><img src="images/why-team.jpg" data-fb="images/hero-cleaner-lobby.webp" onerror="fb(this)" alt="Zemclean team member cleaning a commercial lobby" loading="lazy"></div>
+      <div class="bens">
+        <div class="ben rv"><svg class="ic"><use href="#i-users"/></svg><h3>Professionally Trained Teams</h3><p>Staff trained in cleaning techniques, equipment handling, and workplace safety.</p></div>
+        <div class="ben rv" style="--d:.07s"><svg class="ic"><use href="#i-shield"/></svg><h3>Consistent Quality Control</h3><p>Regular supervision and inspections help maintain cleaning standards.</p></div>
+        <div class="ben rv" style="--d:.14s"><svg class="ic"><use href="#i-clip"/></svg><h3>Customized Cleaning Plans</h3><p>Cleaning schedules and services tailored to your facility.</p></div>
+        <div class="ben rv" style="--d:.21s"><svg class="ic"><use href="#i-tool"/></svg><h3>Modern Cleaning Equipment</h3><p>Professional equipment and appropriate cleaning methods.</p></div>
+        <div class="ben rv" style="--d:.28s"><svg class="ic"><use href="#i-cal"/></svg><h3>Flexible Service Agreements</h3><p>Cleaning arrangements designed around your operational needs.</p></div>
+        <div class="ben rv" style="--d:.35s"><svg class="ic"><use href="#i-phone"/></svg><h3>Customer-Focused Service</h3><p>Responsive communication and attention to changing facility requirements.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec" aria-labelledby="proc-h">
+  <div class="wrap">
+    <div class="head-c rv">
+      <span class="eyebrow">Our Cleaning Process</span>
+      <h2 id="proc-h">A Simple Process. Consistently Cleaner Spaces.</h2>
+    </div>
+    <div class="steps-wrap">
+      <ol class="steps" style="list-style:none">
+        <li class="step rv"><span class="n">01</span><svg class="ic"><use href="#i-building"/></svg><h3>Tell Us About Your Facility</h3><p>Share your building type, cleaning requirements, and preferred schedule.</p></li>
+        <li class="step rv" style="--d:.1s"><span class="n">02</span><svg class="ic"><use href="#i-clip"/></svg><h3>Get a Customized Proposal</h3><p>Receive a cleaning plan designed around your facility's needs.</p></li>
+        <li class="step rv" style="--d:.2s"><span class="n">03</span><svg class="ic"><use href="#i-spark"/></svg><h3>We Take Care of the Cleaning</h3><p>Our cleaning professionals follow the agreed service schedule and procedures.</p></li>
+        <li class="step rv" style="--d:.3s"><span class="n">04</span><svg class="ic"><use href="#i-shield"/></svg><h3>Ongoing Quality &amp; Support</h3><p>We monitor service quality and adapt to your changing requirements.</p></li>
+      </ol>
     </div>
   </div>
 </section>
 
 <!-- QUALITY -->
-<section class="quality" id="quality">
-  <div class="wrap q-grid">
-    <h2 class="rv">You tell us<br><span>when it's clean.</span></h2>
-    <ul class="q-list rv">
-      <li><svg class="spark" style="width:20px"><use href="#spark"/></svg><div><b>Customer service beyond expectations</b><span>Quick answers and a crew that listens.</span></div></li>
-      <li><svg class="spark" style="width:20px"><use href="#spark"/></svg><div><b>Lower costs through supervised care</b><span>Professional, supervised work means fewer repeat jobs.</span></div></li>
-      <li><svg class="spark" style="width:20px"><use href="#spark"/></svg><div><b>Right material, equipment and technique</b><span>The correct tools matched to every surface.</span></div></li>
-      <li><svg class="spark" style="width:20px"><use href="#spark"/></svg><div><b>Trained staff, reliable results</b><span>Quality work, health and safety, and reliability. We make the difference.</span></div></li>
-    </ul>
+<section class="sec q" id="quality" aria-labelledby="q-h">
+  <div class="wrap q-g">
+    <div class="q-photo rv"><img src="images/quality-supervisor.jpg" data-fb="images/supervisor-inspection.webp" onerror="fb(this)" alt="Cleaning supervisor inspecting a commercial washroom" loading="lazy"></div>
+    <div class="rv" style="--d:.12s">
+      <span class="eyebrow">Quality Control &amp; Safety</span>
+      <h2 id="q-h">Quality You Can See. Standards You Can Trust.</h2>
+      <p class="lead">Our approach combines trained cleaning professionals, supervision, modern procedures, and ongoing attention to workplace safety.</p>
+      <div class="q-stack">
+        <div class="q-card"><svg class="ic"><use href="#i-clip"/></svg><div><h3>Quality Inspections</h3><p>Regular checks help ensure cleaning work meets expected standards.</p></div></div>
+        <div class="q-card"><svg class="ic"><use href="#i-users"/></svg><div><h3>Staff Training</h3><p>Ongoing training helps staff follow proper procedures and use cleaning products responsibly.</p></div></div>
+        <div class="q-card"><svg class="ic"><use href="#i-shield"/></svg><div><h3>Health &amp; Safety</h3><p>Appropriate cleaning practices and workplace safety procedures are part of our service approach.</p></div></div>
+      </div>
+      <a class="link" href="#contact">Discover Our Quality Standards <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
   </div>
 </section>
 
-<!-- CREDENTIALS -->
-<section class="creds" id="credentials">
+<!-- BEFORE AFTER -->
+<section class="sec" aria-labelledby="ba-h">
   <div class="wrap">
-    <div class="sec-head rv"><div><span class="eyebrow">Credentials &amp; rewards</span><h2>Backed by the industry.</h2></div></div>
-    <div class="row rv">
-      <img src="images/badge-bbb.png" alt="Better Business Bureau Accredited Business" style="height:96px">
-      <img src="images/badge-issa.jpg" alt="ISSA Member" style="height:96px">
-      <img src="images/badge-bscai.jpg" alt="Building Services Contractors Association International" style="height:80px">
-      <img src="images/badge-godaddy.gif" alt="GoDaddy Verified and Secured" style="height:46px">
+    <div class="head-c rv">
+      <span class="eyebrow">Before &amp; After</span>
+      <h2 id="ba-h">See the Difference Professional Cleaning Makes.</h2>
+      <p class="lead">Drag the handle to compare.</p>
+    </div>
+    <div class="ba rv">
+      <div class="ba-box" id="ba">
+        <img class="after" src="images/after-lobby.jpg" data-fb="images/medical-dental-clinic.webp" onerror="fb(this)" alt="Clean commercial reception after professional cleaning" loading="lazy">
+        <img class="before dirty" id="ba-before" src="images/before-lobby.jpg" data-fb="images/medical-dental-clinic.webp" alt="Commercial reception before cleaning (concept preview)" loading="lazy">
+        <div class="ba-grime" id="ba-grime"></div>
+        <div class="ba-line"></div>
+        <div class="ba-knob"><svg class="ic"><use href="#i-lr"/></svg></div>
+        <span class="ba-lab l">Before</span><span class="ba-lab r">After</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider" id="ba-range">
+      </div>
+      <div class="ba-cap"><b>Commercial lobby and floor care</b><span>Concept preview only. This is not an actual Zemclean project. Real before and after photos will replace it.</span></div>
     </div>
   </div>
 </section>
 
 <!-- AREAS -->
-<section class="areas">
-  <div class="wrap rv">
-    <span class="eyebrow">Where we work</span>
-    <div class="areas-line"><b>Edmonton</b><i>✦</i>Sherwood Park<i>✦</i><b>Spruce Grove</b><i>✦</i>Leduc<i>✦</i><b>Fort Saskatchewan</b><i>✦</i>St. Albert</div>
+<section class="sec alt" id="areas" aria-labelledby="area-h">
+  <div class="wrap areas-g">
+    <div class="rv">
+      <span class="eyebrow">Service Areas</span>
+      <h2 id="area-h">Proudly Serving Edmonton &amp; Surrounding Communities.</h2>
+      <p class="lead">Zemclean provides professional commercial cleaning and janitorial services to businesses across Edmonton and nearby Alberta communities.</p>
+      <!-- CLIENT REVIEW: confirm whether St. Albert is an active service area before adding it -->
+      <ul class="locs">
+        <li class="loc"><svg class="ic"><use href="#i-pin"/></svg>Edmonton</li>
+        <li class="loc"><svg class="ic"><use href="#i-pin"/></svg>Sherwood Park</li>
+        <li class="loc"><svg class="ic"><use href="#i-pin"/></svg>Spruce Grove</li>
+        <li class="loc"><svg class="ic"><use href="#i-pin"/></svg>Leduc</li>
+        <li class="loc"><svg class="ic"><use href="#i-pin"/></svg>Fort Saskatchewan</li>
+      </ul>
+      <a class="btn btn-g" href="#contact">Request Cleaning Services in Your Area <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="map rv" style="--d:.12s">
+      <svg viewBox="0 0 600 470" role="img" aria-label="Stylized map of Edmonton and surrounding service areas">
+        <defs>
+          <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#dfe7ee" stroke-width="1"/></pattern>
+          <radialGradient id="glow"><stop offset="0" stop-color="#75B900" stop-opacity=".35"/><stop offset="1" stop-color="#75B900" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="600" height="470" fill="#F0F5F9"/>
+        <rect width="600" height="470" fill="url(#g)"/>
+        <path d="M-10 330C80 300 150 250 240 235S400 190 470 120 560 60 620 40" fill="none" stroke="#BFD7EA" stroke-width="16" stroke-linecap="round"/>
+        <path d="M0 250H600M300 0V470M70 440L520 40" fill="none" stroke="#fff" stroke-width="7"/>
+        <path d="M0 250H600M300 0V470M70 440L520 40" fill="none" stroke="#cfd9e2" stroke-width="1.5" stroke-dasharray="10 8"/>
+        <circle cx="300" cy="245" r="120" fill="url(#glow)"/>
+        <g stroke="#062B50" stroke-width="2" stroke-dasharray="4 5" opacity=".45" fill="none">
+          <path d="M300 245L90 250M300 245L505 215M300 245L395 90M300 245L275 410"/>
+        </g>
+        <g font-family="Plus Jakarta Sans,sans-serif" font-weight="700" font-size="15" fill="#062B50">
+          <g transform="translate(300 245)"><circle r="22" fill="#062B50"/><circle r="9" fill="#75B900"/><text x="0" y="46" text-anchor="middle" font-size="18" font-weight="800">Edmonton</text></g>
+          <g transform="translate(90 250)"><circle r="12" fill="#75B900" stroke="#fff" stroke-width="4"/><text x="0" y="-22" text-anchor="middle">Spruce Grove</text></g>
+          <g transform="translate(505 215)"><circle r="12" fill="#75B900" stroke="#fff" stroke-width="4"/><text x="0" y="-22" text-anchor="middle">Sherwood Park</text></g>
+          <g transform="translate(395 90)"><circle r="12" fill="#75B900" stroke="#fff" stroke-width="4"/><text x="0" y="-22" text-anchor="middle">Fort Saskatchewan</text></g>
+          <g transform="translate(275 410)"><circle r="12" fill="#75B900" stroke="#fff" stroke-width="4"/><text x="0" y="34" text-anchor="middle">Leduc</text></g>
+        </g>
+      </svg>
+      <small>Stylized map, not to scale</small>
+    </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <svg class="zmark" aria-hidden="true"><use href="#zmark"/></svg>
-  <div class="wrap c-grid">
-    <div class="rv">
-      <span class="eyebrow" style="color:var(--ink)">Contact us</span>
-      <h2>Let's walk your building.</h2>
-      <p>Tell us a little about your space and we will come back with a clear plan and price. No long term contract needed.</p>
-      <a class="big-phone" href="tel:7802894650">780.289.4650</a>
-      <p>Prefer to write? Use the form and we will reply as soon as we can.</p>
+<!-- TESTIMONIALS -->
+<section class="sec" aria-labelledby="t-h">
+  <div class="wrap">
+    <div class="head-c rv">
+      <span class="eyebrow">Testimonials</span>
+      <h2 id="t-h">Trusted by Businesses That Value Cleanliness.</h2>
     </div>
-    <form id="quote" class="rv">
-      <h3>Request a quote</h3>
-      <div class="f2">
-        <label>Your name<input type="text" name="name" required autocomplete="name"></label>
-        <label>Business<input type="text" name="business" autocomplete="organization"></label>
-        <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
-        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+    <!-- CLIENT: replace each placeholder with a real, approved client review -->
+    <div class="tcards">
+      <figure class="tc rv"><span class="flag">Placeholder</span><div class="qm">&ldquo;</div><p>Client review to be added here once an approved testimonial is supplied.</p><figcaption class="who"><span class="av"><svg class="ic"><use href="#i-user"/></svg></span><div><b>Client name</b><span>Business or industry</span></div></figcaption></figure>
+      <figure class="tc rv" style="--d:.1s"><span class="flag">Placeholder</span><div class="qm">&ldquo;</div><p>Client review to be added here once an approved testimonial is supplied.</p><figcaption class="who"><span class="av"><svg class="ic"><use href="#i-user"/></svg></span><div><b>Client name</b><span>Business or industry</span></div></figcaption></figure>
+      <figure class="tc rv" style="--d:.2s"><span class="flag">Placeholder</span><div class="qm">&ldquo;</div><p>Client review to be added here once an approved testimonial is supplied.</p><figcaption class="who"><span class="av"><svg class="ic"><use href="#i-user"/></svg></span><div><b>Client name</b><span>Business or industry</span></div></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec alt" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="head-c rv">
+      <span class="eyebrow">FAQ</span>
+      <h2 id="faq-h">Frequently Asked Questions</h2>
+    </div>
+    <!-- CLIENT REVIEW: confirm every answer below is accurate for current operations -->
+    <div class="faq rv">
+      <details name="faq" open><summary>What types of commercial properties do you clean?<svg class="ic"><use href="#i-chev"/></svg></summary><div class="ans">We clean offices, commercial buildings, retail spaces, medical and healthcare facilities, industrial sites, and managed properties across Edmonton and nearby communities.</div></details>
+      <details name="faq"><summary>Do you offer customized janitorial cleaning schedules?<svg class="ic"><use href="#i-chev"/></svg></summary><div class="ans">Yes. Every facility is different, so we build the cleaning schedule and scope around your building, your operations, and your needs.</div></details>
+      <details name="faq"><summary>Can cleaning services be scheduled outside regular business hours?<svg class="ic"><use href="#i-chev"/></svg></summary><div class="ans">Yes. Night-time cleaning is available so your team arrives to a clean workplace without disruption to the working day.</div></details>
+      <details name="faq"><summary>How do you maintain consistent cleaning quality?<svg class="ic"><use href="#i-chev"/></svg></summary><div class="ans">Through trained staff, supervision, and regular quality checks, with adjustments made as your facility's needs change.</div></details>
+      <details name="faq"><summary>Are your cleaning staff professionally trained?<svg class="ic"><use href="#i-chev"/></svg></summary><div class="ans">Yes. Our team is trained in cleaning procedures, equipment handling, the responsible use of cleaning products, and workplace safety.</div></details>
+      <details name="faq"><summary>Which areas around Edmonton do you serve?<svg class="ic"><use href="#i-chev"/></svg></summary><div class="ans">We serve Edmonton, Sherwood Park, Spruce Grove, Leduc, and Fort Saskatchewan.</div></details>
+      <details name="faq"><summary>How can I request a commercial cleaning quote?<svg class="ic"><use href="#i-chev"/></svg></summary><div class="ans">Use the quote form on this page or call <a href="tel:7802894650" style="color:var(--dgreen);font-weight:600">780-289-4650</a>. Tell us about your facility and we will come back with a customized cleaning proposal.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta" aria-labelledby="cta-h">
+  <img src="images/cta-office.jpg" data-fb="images/car-dealership.webp" onerror="fb(this)" alt="" loading="lazy">
+  <div class="wrap rv">
+    <h2 id="cta-h">Let's Make Your Workplace <em>Shine.</em></h2>
+    <p>Looking for reliable commercial cleaning services in Edmonton or the surrounding area? Tell us about your facility, and let's discuss a cleaning solution that works for your business.</p>
+    <div class="btns">
+      <a class="btn btn-g" href="#contact">Request Your Free Quote <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-w" href="tel:7802894650"><svg class="ic"><use href="#i-phone"/></svg>Call 780-289-4650</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section class="sec" id="contact" aria-labelledby="form-h">
+  <div class="wrap quote-g">
+    <div class="qside rv">
+      <span class="eyebrow">Contact</span>
+      <h2 id="form-h">Request a Customized Cleaning Quote.</h2>
+      <p>Tell us about your facility and what you need. We will review your request and come back with a cleaning plan designed around your business.</p>
+      <div class="cinfo">
+        <a href="tel:7802894650"><span class="bub"><svg class="ic"><use href="#i-phone"/></svg></span>780-289-4650</a>
+        <a href="mailto:raman.mann@zemclean.com"><span class="bub"><svg class="ic"><use href="#i-mail"/></svg></span>raman.mann@zemclean.com</a>
+        <a href="#areas"><span class="bub"><svg class="ic"><use href="#i-pin"/></svg></span>Edmonton, Alberta &amp; surrounding communities</a>
       </div>
-      <label>Type of facility
-        <select name="facility">
-          <option>Medical or dental clinic</option><option>Car dealership</option><option>Apartment or condo</option><option>Strip mall</option><option>Warehouse or mechanic bay</option><option>Other</option>
-        </select>
-      </label>
-      <label>How can we help?<textarea name="message"></textarea></label>
-      <button class="btn btn-solid" type="submit">Send my request</button>
-      <p class="ok" id="ok">Thank you. We will be in touch shortly.</p>
+    </div>
+    <form class="qf rv" id="qf" style="--d:.12s" novalidate>
+      <h3>Get My Cleaning Quote</h3>
+      <div class="fg">
+        <div><label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+        <div><label for="f-co">Company name</label><input id="f-co" name="company" type="text" autocomplete="organization"></div>
+        <div><label for="f-em">Email address <span class="req" aria-hidden="true">*</span></label><input id="f-em" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="f-ph">Phone number <span class="req" aria-hidden="true">*</span></label><input id="f-ph" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="full"><label for="f-loc">Property location</label><input id="f-loc" name="location" type="text" placeholder="Street or neighbourhood, city"></div>
+        <div><label for="f-type">Facility type <span class="req" aria-hidden="true">*</span></label>
+          <select id="f-type" name="facility" required><option value="">Select one</option><option>Corporate office</option><option>Commercial building</option><option>Retail store</option><option>Medical or healthcare facility</option><option>Industrial facility</option><option>Property management</option><option>Educational facility</option><option>Other</option></select></div>
+        <div><label for="f-svc">Cleaning service required</label>
+          <select id="f-svc" name="service"><option value="">Select one</option><option>Commercial janitorial</option><option>Office cleaning</option><option>Commercial disinfection</option><option>Facility cleaning and maintenance</option><option>Floor care</option><option>Not sure yet</option></select></div>
+        <div class="full"><label for="f-freq">Preferred cleaning frequency</label>
+          <select id="f-freq" name="frequency"><option value="">Select one</option><option>Daily</option><option>Several times a week</option><option>Weekly</option><option>Every two weeks</option><option>Monthly</option><option>One-time</option><option>Not sure yet</option></select></div>
+        <div class="full"><label for="f-msg">Additional details</label><textarea id="f-msg" name="message"></textarea></div>
+        <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      </div>
+      <label class="consent" for="f-ok"><input id="f-ok" type="checkbox" name="consent" required><span>I agree that Zemclean may use these details to respond to my quote request. See the <button type="button" class="priv-btn" data-priv>privacy notice</button>. <span class="req" aria-hidden="true" style="color:#c0392b">*</span></span></label>
+      <button class="btn btn-g" type="submit">Get My Cleaning Quote <svg class="ic"><use href="#i-arrow"/></svg></button>
+      <div class="msg" id="msg" role="status" aria-live="polite"></div>
+      <p class="fine">Fields marked * are required.</p>
     </form>
   </div>
 </section>
+
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="f-top">
+    <div class="f-g">
       <div>
-        <a class="f-logo" href="#home"><img src="images/logo.png" alt="Zemclean Custodial Services Inc. Commercial Cleaning Experts"></a>
-        <p class="tag">Janitorial services for your business. Commercial cleaning experts serving Edmonton and surrounding areas.</p>
+        <a class="f-logo" href="#home" aria-label="Zemclean home"><img src="images/logo.png" width="170" height="50" alt="Zemclean Custodial Services Inc." loading="lazy"></a>
+        <p class="tag">Zemclean Custodial Services Inc. Professional commercial cleaning and janitorial services for businesses across Edmonton and surrounding Alberta communities.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#quality">Quality Control</a></li><li><a href="#contact">Contact</a></li></ul>
       </div>
       <div>
         <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Our Services</a></li>
-          <li><a href="#disinfection">Electrostatic Disinfection</a></li>
-          <li><a href="#quality">Quality Control</a></li>
-          <li><a href="#credentials">Credentials &amp; Rewards</a></li>
-        </ul>
+        <ul><li><a href="#services">Commercial Cleaning</a></li><li><a href="#services">Office Cleaning</a></li><li><a href="#services">Janitorial Services</a></li><li><a href="#services">Disinfection Services</a></li><li><a href="#services">Customized Cleaning Programs</a></li></ul>
       </div>
-      <div>
-        <h4>Our Company</h4>
+      <div class="f-c">
+        <h4>Contact</h4>
         <ul>
-          <li><a href="#company">About Us</a></li>
-          <li><a href="#company">Our Pledge</a></li>
-          <li><a href="#company">Our Staff &amp; Training</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><svg class="ic"><use href="#i-phone"/></svg><a href="tel:7802894650">780-289-4650</a></li>
+          <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:raman.mann@zemclean.com">raman.mann@zemclean.com</a></li>
+          <li><svg class="ic"><use href="#i-pin"/></svg><span>Edmonton, Alberta &amp; Surrounding Communities</span></li>
         </ul>
-      </div>
-      <div>
-        <h4>Get in touch</h4>
-        <ul>
-          <li><a href="tel:7802894650">780.289.4650</a></li>
-          <li>Edmonton, Sherwood Park, Spruce Grove, Leduc, Fort Saskatchewan</li>
-        </ul>
-        <div class="social">
-          <a href="https://www.linkedin.com/company/zemclean-custodial-services" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://twitter.com/zemcleanservice" target="_blank" rel="noopener">Twitter</a>
-        </div>
+        <div class="soc"><a href="https://www.linkedin.com/company/zemclean-custodial-services" target="_blank" rel="noopener">LinkedIn</a><a href="https://twitter.com/zemcleanservice" target="_blank" rel="noopener">Twitter</a></div>
       </div>
     </div>
-    <div class="f-bot">
-      <span>&copy; 2026 Zemclean Custodial Services Inc. All rights reserved.</span>
+    <div class="f-b">
+      <span>&copy; <span id="yr">2026</span> Zemclean Custodial Services Inc. All rights reserved. <button type="button" class="priv-btn" data-priv>Privacy Policy</button></span>
       <span>Design by <a href="https://www.dallaswebagency.us/" target="_blank" rel="noopener">Dallas Web Agency</a></span>
     </div>
   </div>
 </footer>
 
+<button class="top" id="top" aria-label="Back to top"><svg class="ic"><use href="#i-up"/></svg></button>
+
+<dialog id="priv">
+  <h3>Privacy notice</h3>
+  <!-- CLIENT: replace with the approved privacy policy text or link -->
+  <p>The details you submit in the quote form are used only to respond to your cleaning quote request. We ask only for the information needed to prepare a customized proposal.</p>
+  <button class="btn btn-n" type="button" id="priv-x">Close</button>
+</dialog>
+
 <script>
 document.documentElement.classList.add('js');
 (function(){
-  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  var $=function(s,r){return (r||document).querySelector(s)};
+  var nav=$('#nav'),b=$('#burger'),m=$('#menu'),top=$('#top');
   b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
-  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+  window.addEventListener('scroll',function(){
+    nav.classList.toggle('stuck',scrollY>10);
+    top.classList.toggle('show',scrollY>900);
+  },{passive:true});
+  top.addEventListener('click',function(){scrollTo({top:0})});
+  $('#yr').textContent=new Date().getFullYear();
+
+  /* reveal on scroll */
   var els=document.querySelectorAll('.rv');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
     els.forEach(function(el){io.observe(el)});
   }else{els.forEach(function(el){el.classList.add('in')})}
-  /* TODO: connect this form to your email handler or form service */
-  document.getElementById('quote').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block';this.reset()});
+
+  /* active nav link */
+  var links=[].slice.call(document.querySelectorAll('.menu a'));
+  if('IntersectionObserver' in window){
+    var ids=links.map(function(a){return a.getAttribute('href').slice(1)});
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+    ids.forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
+  }
+
+  /* before / after slider */
+  var rng=$('#ba-range'),box=$('#ba'),bi=$('#ba-before'),gr=$('#ba-grime');
+  rng.addEventListener('input',function(){box.style.setProperty('--pos',rng.value+'%')});
+  /* if a real before photo is supplied the filter and grime overlay are not needed */
+  bi.addEventListener('error',function(){bi.src=bi.getAttribute('data-fb');},{once:true});
+  bi.addEventListener('load',function(){
+    var real=/before-lobby\.jpg/.test(bi.currentSrc||bi.src);
+    bi.classList.toggle('dirty',!real);gr.style.display=real?'none':'';
+  });
+
+  /* privacy dialog */
+  var pd=$('#priv');
+  document.querySelectorAll('[data-priv]').forEach(function(x){x.addEventListener('click',function(){pd.showModal?pd.showModal():pd.setAttribute('open','')})});
+  $('#priv-x').addEventListener('click',function(){pd.close?pd.close():pd.removeAttribute('open')});
+
+  /* quote form
+     Set ENDPOINT to a form service URL (Formspree, Basin, a WordPress handler, etc.) to send submissions directly.
+     While ENDPOINT is empty the form opens a pre-filled email to the address below, and never shows a false success message. */
+  var ENDPOINT='';
+  var TO='raman.mann@zemclean.com';
+  var f=$('#qf'),msg=$('#msg');
+  function show(t,c){msg.textContent=t;msg.className='msg '+c}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f.website.value){return}
+    if(!f.checkValidity()){f.reportValidity();return}
+    var d={};new FormData(f).forEach(function(v,k){if(k!=='website')d[k]=v});
+    if(ENDPOINT){
+      fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
+        .then(function(r){if(!r.ok)throw 0;show('Thank you. Your request has been sent and we will be in touch shortly.','ok');f.reset()})
+        .catch(function(){show('Sorry, something went wrong. Please call 780-289-4650 or email '+TO+'.','err')});
+    }else{
+      var body=['Name: '+d.name,'Company: '+(d.company||''),'Email: '+d.email,'Phone: '+d.phone,'Property location: '+(d.location||''),'Facility type: '+d.facility,'Service required: '+(d.service||''),'Frequency: '+(d.frequency||''),'','Details:',d.message||''].join('\n');
+      location.href='mailto:'+TO+'?subject='+encodeURIComponent('Cleaning quote request from '+d.name)+'&body='+encodeURIComponent(body);
+      show('Your email app should open with your request ready to send. If it does not, please call 780-289-4650 or email '+TO+'.','ok');
+    }
+  });
 })();
 </script>
 </body>
