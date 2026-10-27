@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="images/car-dealership.webp">
+<link rel="preload" as="image" href="images/hero-office.jpg">
 <script>
 /* image fallback: new artwork file first, then the data-fb file, otherwise hide the image */
 function fb(i){var f=i.getAttribute('data-fb');i.onerror=null;if(f){i.src=f}else{i.style.display='none'}}
@@ -81,8 +81,8 @@ header.nav.stuck{box-shadow:0 8px 24px rgba(6,43,80,.10)}
 
 /* hero */
 .hero{position:relative;min-height:clamp(640px,90vh,860px);display:flex;align-items:center;color:#fff;background:var(--navy);overflow:hidden}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;animation:zoom 14s ease-out both}
-.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(95deg,rgba(6,43,80,.96) 0%,rgba(6,43,80,.88) 34%,rgba(6,43,80,.45) 66%,rgba(6,43,80,.12) 100%)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;animation:zoom 14s ease-out both}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(95deg,rgba(6,43,80,.95) 0%,rgba(6,43,80,.86) 36%,rgba(6,43,80,.30) 64%,rgba(6,43,80,0) 100%)}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;z-index:2;background:linear-gradient(90deg,var(--green),transparent 60%)}
 .hero .wrap{position:relative;z-index:3;padding:5rem 0}
 .hero-in{max-width:690px;animation:up .9s .1s both}
@@ -328,6 +328,8 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
   .cards,.ind,.steps,.bens,.locs,.fg,.f-g{grid-template-columns:1fr}
   .trust{grid-template-columns:1fr}
   .hero .btns .btn{width:100%}
+  .hero::before{background:linear-gradient(180deg,rgba(6,43,80,.92) 0%,rgba(6,43,80,.82) 55%,rgba(6,43,80,.7) 100%)}
+  .hero-img{object-position:70% center}
   .tile{aspect-ratio:16/10}
   .ba-box{aspect-ratio:4/3}
   .logo img{height:46px}
@@ -421,7 +423,7 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
 
 <!-- HERO -->
 <section class="hero" aria-labelledby="h1">
-  <img class="hero-img" src="images/hero-office.jpg" data-fb="images/car-dealership.webp" onerror="fb(this)" alt="Polished commercial interior with glass partitions and natural light" fetchpriority="high">
+  <img class="hero-img" src="images/hero-office.jpg" data-fb="images/car-dealership.webp" onerror="fb(this)" alt="Zemclean cleaning team in navy uniforms cleaning a bright modern office" fetchpriority="high">
   <div class="wrap">
     <div class="hero-in">
       <span class="eyebrow">Edmonton's commercial cleaning professionals</span>
