@@ -26,7 +26,7 @@ function fb(i){var f=i.getAttribute('data-fb');i.onerror=null;if(f){i.src=f}else
   --r:18px; --shadow:0 10px 30px rgba(6,43,80,.10); --shadow2:0 18px 44px rgba(6,43,80,.18);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:96px}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
 body{font-family:var(--body);color:var(--char);background:#fff;line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
@@ -66,18 +66,22 @@ h3{font-size:1.2rem;letter-spacing:-.01em}
 .topbar .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;align-items:center}
 .topbar a{color:#fff;font-weight:600;display:inline-flex;align-items:center;gap:.5rem}
 .topbar a:hover{color:var(--green)}
+.tb-c{display:inline-flex;align-items:center;gap:.55rem;color:#cfe0f1}
+.tb-c i{font-style:normal;opacity:.4}
+.tb-c b{color:#fff;font-weight:600}
+.tb-c a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
 header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
 header.nav.stuck{box-shadow:0 8px 24px rgba(6,43,80,.10)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:78px}
-.logo img{height:54px;width:auto}
-.menu{display:flex;gap:1.6rem;align-items:center}
-.menu a{font:600 .92rem var(--head);color:var(--navy);position:relative;padding:.4rem 0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:92px}
+.logo img{height:70px;width:auto}
+.menu{display:flex;gap:1.15rem;align-items:center}
+.menu a{white-space:nowrap;font:600 .88rem var(--head);color:var(--navy);position:relative;padding:.4rem 0}
 .menu a::after{content:"";position:absolute;left:0;bottom:-2px;height:3px;width:0;background:var(--green);border-radius:2px;transition:width .25s}
 .menu a:hover::after,.menu a.on::after{width:100%}
 .nav-r{display:flex;align-items:center;gap:.7rem}
 .nav-call{display:none;width:46px;height:46px;border-radius:50%;background:var(--soft);color:var(--navy);align-items:center;justify-content:center}
 .burger{display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy);align-items:center;justify-content:center}
-.nav-cta{padding:.9rem 1.3rem;font-size:.86rem;letter-spacing:.04em}
+.nav-cta{padding:.9rem 1.2rem;font-size:.82rem;letter-spacing:.03em}
 
 /* hero */
 .hero{position:relative;min-height:clamp(640px,90vh,860px);display:flex;align-items:center;color:#fff;background:var(--navy);overflow:hidden}
@@ -291,7 +295,7 @@ form.qf{background:#fff;border:1px solid var(--line);border-radius:24px;padding:
 footer{background:var(--navy);color:#b9cde1;padding:4.5rem 0 0;position:relative}
 .f-g{display:grid;grid-template-columns:1.4fr .8fr 1fr 1.2fr;gap:2.4rem;padding-bottom:3rem}
 .f-logo{display:inline-block;background:#fff;padding:.6rem .9rem;border-radius:12px}
-.f-logo img{height:50px;width:auto}
+.f-logo img{height:78px;width:auto}
 footer p.tag{margin-top:1.2rem;font-size:.95rem;max-width:21rem}
 footer h4{color:#fff;font-size:1rem;margin-bottom:1.1rem;letter-spacing:0}
 footer li{margin-bottom:.6rem;font-size:.95rem}
@@ -312,8 +316,8 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
 .js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease;transition-delay:var(--d,0s)}
 .js .rv.in{opacity:1;transform:none}
 
-@media (max-width:1120px){
-  .menu{position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;gap:0;padding:.5rem 4% 1.2rem;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(6,43,80,.12);display:none}
+@media (max-width:1290px){
+  .menu{position:absolute;top:92px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;gap:0;padding:.5rem 4% 1.2rem;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(6,43,80,.12);display:none}
   .menu.open{display:flex}
   .menu a{padding:.9rem 0;width:100%;border-bottom:1px solid var(--line)}
   .menu a::after{display:none}
@@ -343,9 +347,9 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
   .hero-img{object-position:70% center}
   .tile{aspect-ratio:16/10}
   .ba-box{aspect-ratio:4/3}
-  .logo img{height:46px}
-  .nav .wrap{height:70px}
-  .menu{top:70px}
+  .logo img{height:56px}
+  .nav .wrap{height:80px}
+  .menu{top:80px}
   .cta .btns .btn{width:100%}
   .btn{white-space:normal;text-align:center;padding:1rem 1.2rem}
 }
@@ -397,20 +401,21 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
   <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
   <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
   <symbol id="i-lr" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
   <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></symbol>
 </svg>
 
 <div class="topbar">
   <div class="wrap">
     <span class="l">Professional Commercial Cleaning Across Edmonton &amp; Surrounding Areas</span>
-    <a href="tel:7802894650"><svg class="ic"><use href="#i-phone"/></svg>Call: 780-289-4650</a>
+    <span class="tb-c">Call or Text: <a href="tel:7802894650">Call</a><i>|</i><a href="sms:7802894650">Text</a> <b>780-289-4650</b></span>
   </div>
 </div>
 
 <header class="nav" id="nav">
   <div class="wrap">
     <a class="logo" href="#home" aria-label="Zemclean Custodial Services Inc. home">
-      <img src="images/logo.png" width="184" height="54" alt="Zemclean Custodial Services Inc. logo">
+      <img src="images/logo.png" width="239" height="70" alt="Zemclean Custodial Services Inc. logo">
     </a>
     <nav class="menu" id="menu" aria-label="Main navigation">
       <a href="#home" class="on">Home</a>
@@ -423,7 +428,8 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
     </nav>
     <div class="nav-r">
       <a class="nav-call" href="tel:7802894650" aria-label="Call Zemclean"><svg class="ic"><use href="#i-phone"/></svg></a>
-      <a class="btn btn-g nav-cta" href="#contact">GET A FREE QUOTE</a>
+      <a class="nav-call nav-sms" href="sms:7802894650" aria-label="Text Zemclean"><svg class="ic"><use href="#i-chat"/></svg></a>
+      <a class="btn btn-g nav-cta" href="tel:7802894650"><svg class="ic"><use href="#i-phone"/></svg>CALL OR TEXT</a>
       <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg class="ic"><use href="#i-menu"/></svg></button>
     </div>
   </div>
@@ -794,7 +800,7 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
   <div class="wrap">
     <div class="f-g">
       <div>
-        <a class="f-logo" href="#home" aria-label="Zemclean home"><img src="images/logo.png" width="170" height="50" alt="Zemclean Custodial Services Inc." loading="lazy"></a>
+        <a class="f-logo" href="#home" aria-label="Zemclean home"><img src="images/logo.png" width="266" height="78" alt="Zemclean Custodial Services Inc." loading="lazy"></a>
         <p class="tag">Zemclean Custodial Services Inc. Professional commercial cleaning and janitorial services for businesses across Edmonton and surrounding Alberta communities.</p>
       </div>
       <div>
@@ -808,7 +814,7 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
       <div class="f-c">
         <h4>Contact</h4>
         <ul>
-          <li><svg class="ic"><use href="#i-phone"/></svg><a href="tel:7802894650">780-289-4650</a></li>
+          <li><svg class="ic"><use href="#i-phone"/></svg><span>Call or text: <a href="tel:7802894650">Call</a> | <a href="sms:7802894650">Text</a> <b style="color:#fff">780-289-4650</b></span></li>
           <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:raman.mann@zemclean.com">raman.mann@zemclean.com</a></li>
           <li><svg class="ic"><use href="#i-pin"/></svg><span>Edmonton, Alberta &amp; Surrounding Communities</span></li>
         </ul>
