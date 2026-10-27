@@ -9,6 +9,12 @@
     b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
     m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
   }
+  $$('.has-mega').forEach(function(h){
+    var bt=$('.mg-b',h);
+    bt.addEventListener('click',function(e){e.stopPropagation();var o=h.classList.toggle('open');bt.setAttribute('aria-expanded',o);$$('.has-mega').forEach(function(x){if(x!==h){x.classList.remove('open');$('.mg-b',x).setAttribute('aria-expanded','false')}})});
+    h.addEventListener('mouseleave',function(){h.classList.remove('open');bt.setAttribute('aria-expanded','false')});
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){$$('.has-mega.open').forEach(function(h){h.classList.remove('open');$('.mg-b',h).setAttribute('aria-expanded','false')})}});
   var ticking=false;
   function onScroll(){
     var y=window.scrollY||0,h=document.documentElement.scrollHeight-innerHeight;
