@@ -537,3 +537,23 @@ body{animation:pagein .6s ease both}
 .up-list img{width:100%;height:100%;object-fit:cover;display:block}
 .up-list button{position:absolute;top:3px;right:3px;width:22px;height:22px;border-radius:50%;border:0;background:rgba(6,43,80,.85);color:#fff;font:700 14px/1 var(--body);cursor:pointer;padding:0}
 .up-list .bad{width:auto;height:auto;padding:.4rem .6rem;font-size:.8rem;color:#c0392b;border-color:#f0c4be}
+
+.f-cta{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;padding:1.8rem 2rem;margin-top:-7.2rem;margin-bottom:2.2rem;border-radius:22px;background:linear-gradient(120deg,#75B900,#5c9400);color:#052033;box-shadow:0 20px 50px rgba(6,43,80,.28);position:relative}
+.f-cta h3{font-size:clamp(1.25rem,2.4vw,1.7rem);color:#052033;margin:0 0 .3rem}
+.f-cta p{margin:0;color:#0a3350;font-size:.98rem}
+.f-cta-b{display:flex;gap:.8rem;flex-wrap:wrap}
+.f-cta .btn-g{background:var(--navy);color:#fff}
+.f-cta .btn-o{background:transparent;border:2px solid var(--navy);color:var(--navy)}
+.f-cta .btn-o:hover{background:var(--navy);color:#fff}
+.f-badges{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding-bottom:2.6rem;margin-bottom:2.6rem;border-bottom:1px solid rgba(255,255,255,.14)}
+.fbd{display:flex;align-items:center;gap:.85rem;padding:.9rem 1rem;border:1px solid rgba(255,255,255,.16);border-radius:16px;background:rgba(255,255,255,.05);transition:.25s}
+.fbd:hover{border-color:var(--green);background:rgba(117,185,0,.1);transform:translateY(-3px)}
+.fbd-ic{width:46px;height:46px;border-radius:12px;background:rgba(117,185,0,.18);color:var(--green);display:grid;place-items:center;flex:none;font-size:1.5rem}
+.fbd-ic .ic{width:24px;height:24px}
+.fbd-star{color:#ffc928;background:rgba(255,201,40,.15)}
+.fbd strong{display:block;color:#fff;font:700 1.05rem var(--head);line-height:1.2}
+.fbd strong .stars{color:#ffc928;letter-spacing:1px;font-size:.9rem}
+.fbd div>span{display:block;font-size:.85rem;color:#b9cde1}
+.f-g{grid-template-columns:1.4fr .8fr 1fr 1fr 1.2fr}
+@media (max-width:1100px){.f-g{grid-template-columns:1fr 1fr 1fr}.f-badges{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.f-g{grid-template-columns:1fr}.f-badges{grid-template-columns:1fr}.f-cta{padding:1.4rem;margin-top:-5.5rem}.f-cta-b,.f-cta-b .btn{width:100%}}
