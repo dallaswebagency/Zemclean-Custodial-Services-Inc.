@@ -496,3 +496,19 @@ body{animation:pagein .6s ease both}
   .steps::before{transform:none}
   .progress{display:none}
 }
+
+/* industries tiles: photo, icon badge, hover arrow */
+.tile::before{background:linear-gradient(to top,rgba(6,43,80,.96) 6%,rgba(6,43,80,.55) 48%,rgba(6,43,80,.18) 100%);transition:background .4s}
+.tile:hover::before{background:linear-gradient(to top,rgba(6,43,80,.97) 6%,rgba(6,43,80,.7) 55%,rgba(6,43,80,.35) 100%)}
+.tile .big{width:58px;height:58px;border-radius:16px;background:var(--green);color:#052033;border:0;box-shadow:0 8px 20px rgba(117,185,0,.4)}
+.tile .big .ic{width:1.55em;height:1.55em;stroke-width:2}
+.tile .go{position:absolute;top:1.3rem;right:1.3rem;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.16);backdrop-filter:blur(4px);color:#fff;display:grid;place-items:center;opacity:0;transform:translate(-8px,8px) scale(.8);transition:.35s}
+.tile:hover .go{opacity:1;transform:none;background:var(--green);color:#052033}
+.tile h3{font-size:1.25rem}
+@media (hover:none){.tile .go{opacity:1;transform:none}}
+
+.tile .tx p{color:#d3e2f1;font-size:.9rem;line-height:1.45;margin-top:.45rem}
+.tile{aspect-ratio:3/4}
+@media (max-width:620px){.tile{aspect-ratio:auto;min-height:290px}}
+.tile h3{padding-top:0}
+.tile h3::before{display:none}
