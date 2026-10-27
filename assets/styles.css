@@ -516,3 +516,7 @@ body{animation:pagein .6s ease both}
 .media{padding-bottom:0}
 .m-main{aspect-ratio:4/3}
 .m-main{aspect-ratio:3/2}
+
+.why-photo{aspect-ratio:1/1.05}
+.why-photo img{object-position:46% center}
+@media (max-width:980px){.why-photo{aspect-ratio:4/3}}
