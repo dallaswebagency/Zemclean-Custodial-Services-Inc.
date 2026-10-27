@@ -14,7 +14,7 @@
     bt.addEventListener('click',function(e){e.stopPropagation();var o=h.classList.toggle('open');bt.setAttribute('aria-expanded',o);$$('.has-mega').forEach(function(x){if(x!==h){x.classList.remove('open');$('.mg-b',x).setAttribute('aria-expanded','false')}})});
     h.addEventListener('mouseleave',function(){h.classList.remove('open');bt.setAttribute('aria-expanded','false')});
   });
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'){$$('.has-mega.open').forEach(function(h){h.classList.remove('open');$('.mg-b',h).setAttribute('aria-expanded','false')})}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){var ae=document.activeElement;if(ae&&ae.closest&&ae.closest('.has-mega')){var tg=ae.closest('.has-mega').querySelector('.mg-b');if(tg)tg.focus();ae.blur&&ae.blur()}$$('.has-mega.open').forEach(function(h){h.classList.remove('open');$('.mg-b',h).setAttribute('aria-expanded','false')})}});
   var ticking=false;
   function onScroll(){
     var y=window.scrollY||0,h=document.documentElement.scrollHeight-innerHeight;
