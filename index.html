@@ -98,14 +98,25 @@ header.nav.stuck{box-shadow:0 8px 24px rgba(6,43,80,.10)}
 @keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 
 /* credentials */
-.creds{padding:2.6rem 0;border-bottom:1px solid var(--line);background:#fff}
-.creds .wrap{display:flex;align-items:center;justify-content:space-between;gap:2rem 3rem;flex-wrap:wrap}
-.creds h2{font-size:1.2rem;max-width:15rem;line-height:1.25}
-.logos{display:flex;align-items:center;gap:1.8rem 2.6rem;flex-wrap:wrap;flex:1;justify-content:flex-end}
-.logos img{height:58px;width:auto;filter:grayscale(1);opacity:.7;transition:.3s;mix-blend-mode:multiply}
-.logos img:hover{filter:none;opacity:1}
-.mark{font:800 .86rem/1.15 var(--head);color:var(--navy);letter-spacing:.04em;text-transform:uppercase;border:2px solid #b8c4cf;border-radius:10px;padding:.7rem .95rem;text-align:center;opacity:.75;transition:.3s;filter:grayscale(1)}
-.mark:hover{border-color:var(--green);opacity:1;color:var(--dgreen)}
+.creds{background:var(--navy);color:#cfe0f1;padding:clamp(3.5rem,7vw,5.5rem) 0;position:relative;overflow:hidden}
+.creds::before{content:"";position:absolute;left:50%;top:60%;width:900px;height:400px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(117,185,0,.16),transparent 70%);pointer-events:none}
+.creds .wrap{position:relative}
+.creds .eyebrow{color:var(--green);justify-content:center;width:100%}
+.creds h2{color:#fff;text-align:center;font-size:clamp(1.8rem,3.6vw,2.8rem);margin-bottom:2.6rem}
+.creds h2 em{font-style:normal;color:var(--green)}
+.badges{display:grid;grid-template-columns:repeat(5,1fr);gap:1.1rem}
+.badge{border:1px solid rgba(117,185,0,.35);border-radius:22px;padding:1.4rem 1.1rem 1.5rem;text-align:center;background:rgba(255,255,255,.03);transition:.3s;display:flex;flex-direction:column;align-items:center}
+.badge:hover{border-color:var(--green);background:rgba(255,255,255,.07);transform:translateY(-6px)}
+.b-img{width:100%;height:112px;border-radius:14px;background:#fff;display:grid;place-items:center;margin-bottom:1.2rem;padding:.7rem}
+.b-img img{max-height:86px;width:auto;max-width:100%;object-fit:contain}
+.b-img .mark{border:2px solid var(--navy);color:var(--navy);opacity:1;filter:none;font-size:.9rem}
+.badge h3{color:#fff;font-size:1.05rem;text-transform:uppercase;letter-spacing:.01em;margin-bottom:.4rem}
+.badge h3 em{font-style:normal;color:var(--green)}
+.badge p{font-size:.9rem;color:#b9cde1;line-height:1.5}
+.c-foot{display:flex;justify-content:center;gap:1.6rem 2.4rem;flex-wrap:wrap;margin-top:2.2rem;font-size:.95rem;color:#dbe7f3}
+.c-foot span{display:inline-flex;align-items:center;gap:.6rem}
+.c-foot .ic{color:var(--green);width:1.5em;height:1.5em}
+.mark{font:800 .86rem/1.15 var(--head);text-transform:uppercase;border-radius:10px;padding:.7rem .95rem;text-align:center}
 
 /* about */
 .about-g{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2.5rem,6vw,5.5rem);align-items:center}
@@ -319,13 +330,13 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
   .tcards{grid-template-columns:1fr}
   .f-g{grid-template-columns:1fr 1fr}
   .m-sub{right:.5rem}
-  .logos{justify-content:flex-start;flex:1 1 100%}
+  .badges{grid-template-columns:repeat(3,1fr)}
 }
 @media (max-width:620px){
   body{font-size:16px}
   .topbar .l{display:none}
   .topbar .wrap{justify-content:center}
-  .cards,.ind,.steps,.bens,.locs,.fg,.f-g{grid-template-columns:1fr}
+  .cards,.ind,.steps,.bens,.locs,.fg,.f-g,.badges{grid-template-columns:1fr}
   .trust{grid-template-columns:1fr}
   .hero .btns .btn{width:100%}
   .hero::before{background:linear-gradient(180deg,rgba(6,43,80,.92) 0%,rgba(6,43,80,.82) 55%,rgba(6,43,80,.7) 100%)}
@@ -337,7 +348,6 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
   .menu{top:70px}
   .cta .btns .btn{width:100%}
   .btn{white-space:normal;text-align:center;padding:1rem 1.2rem}
-  .logos img{height:46px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -444,16 +454,21 @@ dialog p{font-size:.95rem;margin-bottom:1.2rem}
 </section>
 
 <!-- CREDENTIALS -->
+<!-- CLIENT: confirm each credential below is current, and swap the WCB Alberta and CBRB text marks for the official logos -->
 <section class="creds" aria-labelledby="cred-h">
   <div class="wrap">
-    <h2 id="cred-h">Trusted Cleaning Standards. Professional Service.</h2>
-    <div class="logos">
-      <img src="images/badge-issa.jpg" alt="ISSA member" loading="lazy" height="58">
-      <img src="images/badge-bbb.png" alt="Better Business Bureau" loading="lazy" height="58">
-      <img src="images/badge-bscai.jpg" alt="Building Service Contractors Association International" loading="lazy" height="58">
-      <!-- CLIENT: swap these two text marks for the official WCB Alberta and Canadian Business Review Board logos -->
-      <span class="mark">WCB<br>Alberta</span>
-      <span class="mark">Canadian Business<br>Review Board</span>
+    <span class="eyebrow">Credentials &amp; memberships</span>
+    <h2 id="cred-h">Trusted Cleaning Standards. <em>Professional Service.</em></h2>
+    <div class="badges">
+      <div class="badge rv"><div class="b-img"><img src="images/badge-bbb.png" alt="Better Business Bureau accredited business" loading="lazy"></div><h3>BBB <em>Accredited</em></h3><p>Better Business Bureau accredited business</p></div>
+      <div class="badge rv" style="--d:.07s"><div class="b-img"><img src="images/badge-issa.jpg" alt="ISSA member" loading="lazy"></div><h3>ISSA <em>Member</em></h3><p>Worldwide cleaning industry association</p></div>
+      <div class="badge rv" style="--d:.14s"><div class="b-img"><img src="images/badge-bscai.jpg" alt="Building Service Contractors Association International" loading="lazy"></div><h3>BSCAI <em>Member</em></h3><p>Building Service Contractors Association International</p></div>
+      <div class="badge rv" style="--d:.21s"><div class="b-img"><span class="mark">WCB<br>Alberta</span></div><h3>WCB <em>Alberta</em></h3><p>Workers' Compensation Board of Alberta</p></div>
+      <div class="badge rv" style="--d:.28s"><div class="b-img"><span class="mark">CBRB</span></div><h3>Canadian <em>Business Review Board</em></h3><p>Listed with the Canadian Business Review Board</p></div>
+    </div>
+    <div class="c-foot">
+      <span><svg class="ic"><use href="#i-shield"/></svg>Fully insured and bonded</span>
+      <span><svg class="ic"><use href="#i-check"/></svg>Flexible service agreements</span>
     </div>
   </div>
 </section>
