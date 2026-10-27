@@ -523,3 +523,17 @@ body{animation:pagein .6s ease both}
 
 .q-photo{aspect-ratio:4/4.4}
 .q-photo img{object-position:60% center}
+
+.qf .lbl{display:block;font:600 .88rem var(--head);color:var(--navy);margin-bottom:.35rem}.qf .lbl em{font:400 .82rem var(--body);color:#6b7a89}
+.up{position:relative;border:2px dashed #b9c6d3;border-radius:14px;background:#f6faf0;transition:.2s}
+.up:hover,.up.drag{border-color:var(--green);background:#eef7dc}
+.up:focus-within{border-color:var(--green);box-shadow:0 0 0 4px rgba(117,185,0,.18)}
+.qf .up input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;padding:0;border:0}
+.up-ui{display:flex;gap:.9rem;align-items:center;padding:1.1rem 1.2rem;pointer-events:none;color:var(--navy);font-size:.95rem}
+.up-ui .ic{width:30px;height:30px;color:var(--dgreen);flex:none}
+.up-ui small{display:block;color:#6b7a89;font-size:.8rem;margin-top:.15rem}
+.up-list{list-style:none;margin:.7rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.up-list li{position:relative;width:78px;height:78px;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.up-list img{width:100%;height:100%;object-fit:cover;display:block}
+.up-list button{position:absolute;top:3px;right:3px;width:22px;height:22px;border-radius:50%;border:0;background:rgba(6,43,80,.85);color:#fff;font:700 14px/1 var(--body);cursor:pointer;padding:0}
+.up-list .bad{width:auto;height:auto;padding:.4rem .6rem;font-size:.8rem;color:#c0392b;border-color:#f0c4be}

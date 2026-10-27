@@ -42,6 +42,7 @@ function fb(i){var f=i.getAttribute('data-fb');i.onerror=null;if(f){i.src=f}else
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
   <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 5-5"/></symbol>
   <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2c2.9 0 5 2.3 5 5.3"/></symbol>
+  <symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.7"/><path d="M21 16l-5-5-8 9"/></symbol>
   <symbol id="i-clip" viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></symbol>
   <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></symbol>
   <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
@@ -125,6 +126,13 @@ function fb(i){var f=i.getAttribute('data-fb');i.onerror=null;if(f){i.src=f}else
         <div class="full"><label for="f-freq">Preferred cleaning frequency</label>
           <select id="f-freq" name="frequency"><option value="">Select one</option><option>Daily</option><option>Several times a week</option><option>Weekly</option><option>Every two weeks</option><option>Monthly</option><option>One-time</option><option>Not sure yet</option></select></div>
         <div class="full"><label for="f-msg">Additional details</label><textarea id="f-msg" name="message"></textarea></div>
+        <div class="full"><span class="lbl" id="up-l">Photos of the space <em>(optional)</em></span>
+          <div class="up" id="up">
+            <input id="f-img" name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple aria-labelledby="up-l" aria-describedby="up-h">
+            <div class="up-ui"><svg class="ic"><use href="#i-img"/></svg><div><strong>Upload photos</strong> or drag them here<small id="up-h">Up to 5 images (JPG, PNG or WebP), 5 MB each. Photos help us plan your quote.</small></div></div>
+          </div>
+          <ul class="up-list" id="up-list" aria-live="polite"></ul>
+        </div>
         <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       </div>
       <label class="consent" for="f-ok"><input id="f-ok" type="checkbox" name="consent" required><span>I agree that Zemclean may use these details to respond to my quote request. See the <button type="button" class="priv-btn" data-priv>privacy notice</button>. <span class="req" aria-hidden="true" style="color:#c0392b">*</span></span></label>

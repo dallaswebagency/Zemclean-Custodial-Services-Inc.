@@ -97,19 +97,49 @@
   var f=$('#qf'),msg=$('#msg');
   if(f){
     var show=function(t,c){msg.textContent=t;msg.className='msg '+c};
+    var files=[],inp=$('#f-img'),list=$('#up-list'),box=$('#up'),MAXN=5,MAXB=5*1024*1024;
+    var draw=function(note){
+      list.innerHTML='';
+      files.forEach(function(x,i){
+        var li=document.createElement('li'),im=document.createElement('img'),b=document.createElement('button');
+        im.alt=x.name;im.src=URL.createObjectURL(x);
+        b.type='button';b.textContent='\u00d7';b.setAttribute('aria-label','Remove '+x.name);
+        b.addEventListener('click',function(){files.splice(i,1);draw()});
+        li.appendChild(im);li.appendChild(b);list.appendChild(li);
+      });
+      if(note){var n=document.createElement('li');n.className='bad';n.textContent=note;list.appendChild(n)}
+    };
+    var add=function(fl){
+      var note='';
+      Array.prototype.forEach.call(fl,function(x){
+        if(!/^image\/(jpeg|png|webp)$/.test(x.type)){note='Only JPG, PNG or WebP images can be added.';return}
+        if(x.size>MAXB){note=x.name+' is over 5 MB.';return}
+        if(files.length>=MAXN){note='You can add up to 5 photos.';return}
+        files.push(x);
+      });
+      draw(note);
+    };
+    if(inp&&list&&box){
+      inp.addEventListener('change',function(){add(inp.files);inp.value=''});
+      ['dragenter','dragover'].forEach(function(t){box.addEventListener(t,function(){box.classList.add('drag')})});
+      ['dragleave','drop'].forEach(function(t){box.addEventListener(t,function(){box.classList.remove('drag')})});
+    }
     f.addEventListener('submit',function(e){
       e.preventDefault();
       if(f.website.value){return}
       if(!f.checkValidity()){f.reportValidity();return}
-      var d={};new FormData(f).forEach(function(v,k){if(k!=='website')d[k]=v});
+      var d={};new FormData(f).forEach(function(v,k){if(k!=='website'&&k!=='photos')d[k]=v});
       if(ENDPOINT){
-        fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
-          .then(function(r){if(!r.ok)throw 0;show('Thank you. Your request has been sent and we will be in touch shortly.','ok');f.reset()})
+        var fd=new FormData();Object.keys(d).forEach(function(k){fd.append(k,d[k])});
+        files.forEach(function(x){fd.append('photos',x,x.name)});
+        fetch(ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:fd})
+          .then(function(r){if(!r.ok)throw 0;show('Thank you. Your request has been sent and we will be in touch shortly.','ok');f.reset();files=[];draw()})
           .catch(function(){show('Sorry, something went wrong. Please call 780-289-4650 or email '+TO+'.','err')});
       }else{
-        var body=['Name: '+d.name,'Company: '+(d.company||''),'Email: '+d.email,'Phone: '+d.phone,'Property location: '+(d.location||''),'Facility type: '+d.facility,'Service required: '+(d.service||''),'Frequency: '+(d.frequency||''),'','Details:',d.message||''].join('\n');
-        location.href='mailto:'+TO+'?subject='+encodeURIComponent('Cleaning quote request from '+d.name)+'&body='+encodeURIComponent(body);
-        show('Your email app should open with your request ready to send. If it does not, please call 780-289-4650 or email '+TO+'.','ok');
+        var body=['Name: '+d.name,'Company: '+(d.company||''),'Email: '+d.email,'Phone: '+d.phone,'Property location: '+(d.location||''),'Facility type: '+d.facility,'Service required: '+(d.service||''),'Frequency: '+(d.frequency||''),'','Details:',d.message||''];
+        if(files.length){body.push('','Photos to attach: '+files.map(function(x){return x.name}).join(', '))}
+        location.href='mailto:'+TO+'?subject='+encodeURIComponent('Cleaning quote request from '+d.name)+'&body='+encodeURIComponent(body.join('\n'));
+        show(files.length?'Your email app should open with your request ready. Please attach your photos to that email before sending, or call 780-289-4650.':'Your email app should open with your request ready to send. If it does not, please call 780-289-4650 or email '+TO+'.','ok');
       }
     });
   }
