@@ -44,7 +44,7 @@
       if(!f.elements.email.checkValidity()){err(2,'Please enter a valid email address.');f.elements.email.focus();return false}
       if(val('phone').replace(/\D/g,'').length<10){err(2,'Please enter a phone number with area code.');f.elements.phone.focus();return false}
     }
-    if(n===3&&val('walk')&&val('start')&&val('walk')>val('start')){err(3,'Your walk-through date should be on or before your start date.');return false}
+    if(n===3&&val('walk')&&val('start')&&val('walk')>val('start')){err(3,'Your preferred date should be on or before your cleaning start date.');return false}
     return true;
   }
   $$('[data-next]').forEach(function(b){b.addEventListener('click',function(){if(valid(step))go(step+1)})});
@@ -81,7 +81,7 @@
     L.push(['Services',chosen().join(', ')]);
     L.push(['Name',val('name')]);L.push(['Company',val('company')]);L.push(['Phone',val('phone')]);L.push(['Email',val('email')]);
     L.push(['Facility address',val('address')]);L.push(['Facility type',val('facility')]);L.push(['Approx. size',val('size')]);
-    L.push(['Preferred cleaning start date',val('start')]);L.push(['Walk-through date',val('walk')]);L.push(['Frequency',val('frequency')]);L.push(['Preferred cleaning time',val('time')]);
+    L.push(['Preferred cleaning start date',val('start')]);L.push(['Preferred date',val('walk')]);L.push(['Frequency',val('frequency')]);L.push(['Preferred cleaning time',val('time')]);
     L.push(['Photos',files.length?files.map(function(x){return x.name}).join(', '):'']);
     L.push(['Notes',val('notes')]);
     return L.filter(function(r){return r[1]});
