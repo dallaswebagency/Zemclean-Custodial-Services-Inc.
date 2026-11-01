@@ -358,7 +358,7 @@ body{animation:pagein .6s ease both}
 /* header shrink */
 @media (min-width:1361px){
   .nav .wrap,.logo img{transition:height .35s ease}
-  header.nav.stuck .wrap{height:76px}
+  header.nav.stuck .wrap:not(.mg-g){height:76px}
   header.nav.stuck .logo img{height:58px}
 }
 
