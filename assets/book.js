@@ -38,7 +38,7 @@
   function valid(n){
     err(n,'');
     if(n===1){if(!chosen().length){err(1,'Please choose at least one service.');return false}return true}
-    var req=n===2?['name','phone','email','address','facility']:n===3?['start','frequency','time']:[];
+    var req=n===2?['name','phone','email','address','facility']:n===3?['walk','start','frequency','time']:[];
     for(var i=0;i<req.length;i++){var el=f.elements[req[i]];if(!el.value.trim()){err(n,'Please complete the required fields marked *.');el.focus();return false}}
     if(n===2){
       if(!f.elements.email.checkValidity()){err(2,'Please enter a valid email address.');f.elements.email.focus();return false}
@@ -81,7 +81,7 @@
     L.push(['Services',chosen().join(', ')]);
     L.push(['Name',val('name')]);L.push(['Company',val('company')]);L.push(['Phone',val('phone')]);L.push(['Email',val('email')]);
     L.push(['Facility address',val('address')]);L.push(['Facility type',val('facility')]);L.push(['Approx. size',val('size')]);
-    L.push(['Preferred start date',val('start')]);L.push(['Walk-through date',val('walk')]);L.push(['Frequency',val('frequency')]);L.push(['Preferred cleaning time',val('time')]);
+    L.push(['Preferred cleaning start date',val('start')]);L.push(['Walk-through date',val('walk')]);L.push(['Frequency',val('frequency')]);L.push(['Preferred cleaning time',val('time')]);
     L.push(['Photos',files.length?files.map(function(x){return x.name}).join(', '):'']);
     L.push(['Notes',val('notes')]);
     return L.filter(function(r){return r[1]});
@@ -89,7 +89,7 @@
   function review(){
     $('#bk-rev').innerHTML='<dl>'+lines().map(function(r){return '<div><dt>'+esc(r[0])+'</dt><dd>'+esc(r[1])+'</dd></div>'}).join('')+'</dl>';
   }
-  function text(){return 'Commercial cleaning booking request\n\n'+lines().map(function(r){return r[0]+': '+r[1]}).join('\n')}
+  function text(){return 'Commercial cleaning quote request\n\n'+lines().map(function(r){return r[0]+': '+r[1]}).join('\n')}
   function copy(btn){
     var t=text(),ok=function(){var o=btn.textContent;btn.textContent='Copied';setTimeout(function(){btn.textContent=o},1800)};
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){window.prompt('Copy your details',t)})}else{window.prompt('Copy your details',t)}
@@ -101,7 +101,7 @@
   function done(sent){
     f.hidden=true;$('#bk-steps').hidden=true;
     var dn=$('#bk-done');dn.hidden=false;
-    $('#bk-dt').textContent=sent?'Booking request submitted':'Your booking request is ready';
+    $('#bk-dt').textContent=sent?'Quote request submitted':'Your quote request is ready';
     $('#bk-dp').textContent=sent?'Thank you. We have your request and will be in touch shortly.':'Your email app should have opened with your request written for you. '+(files.length?'Please attach your photos to that email before sending. ':'')+'If it did not open, use Copy details or call 780-289-4650.';
     dn.focus();window.scrollTo({top:dn.getBoundingClientRect().top+window.scrollY-140,behavior:'smooth'});
   }
@@ -118,7 +118,7 @@
         .then(function(r){if(!r.ok)throw 0;done(true)})
         .catch(function(){err(4,'Sorry, something went wrong. Please call 780-289-4650 or email '+TO+'.')});
     }else{
-      location.href='mailto:'+TO+'?subject='+encodeURIComponent('Booking request from '+val('name')+(val('company')?' ('+val('company')+')':''))+'&body='+encodeURIComponent(text()+(files.length?'\n\n(Photos to attach: '+files.length+')':''));
+      location.href='mailto:'+TO+'?subject='+encodeURIComponent('Quote request from '+val('name')+(val('company')?' ('+val('company')+')':''))+'&body='+encodeURIComponent(text()+(files.length?'\n\n(Photos to attach: '+files.length+')':''));
       done(false);
     }
   });
