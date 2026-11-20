@@ -546,7 +546,7 @@ body{animation:pagein .6s ease both}
 .f-cta .btn-g{background:var(--navy);color:#fff}
 .f-cta .btn-o{background:transparent;border:2px solid var(--navy);color:var(--navy)}
 .f-cta .btn-o:hover{background:var(--navy);color:#fff}
-.f-badges{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding-bottom:2.6rem;margin-bottom:2.6rem;border-bottom:1px solid rgba(255,255,255,.14)}
+.f-badges{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;padding-bottom:2.6rem;margin-bottom:2.6rem;border-bottom:1px solid rgba(255,255,255,.14)}
 .fbd{display:flex;align-items:center;gap:.85rem;padding:.9rem 1rem;border:1px solid rgba(255,255,255,.16);border-radius:16px;background:rgba(255,255,255,.05);transition:.25s}
 .fbd:hover{border-color:var(--green);background:rgba(117,185,0,.1);transform:translateY(-3px)}
 .fbd-ic{width:46px;height:46px;border-radius:12px;background:rgba(117,185,0,.18);color:var(--green);display:grid;place-items:center;flex:none;font-size:1.5rem}
